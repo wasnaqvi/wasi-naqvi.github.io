@@ -1,4 +1,26 @@
 title: Wasi Naqvi
-show_downloads: true
+show_downloads: false
 logo: /assets/headshot-modified.png
 theme: jekyll-theme-minimal
+
+
+# Navigation Menu
+nav:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /https://github.com/wasnaqvi/Projects.git
+  - title: Blog
+    url: /blog
+  - title: Contact
+    url: /contact
+
+# Footer Information
+footer:
+  copyright: © 2024 Wasi Naqvi. All rights reserved.
+  powered_by: Powered by Jekyll and GitHub Pages
+
+# Other Settings
+permalink: pretty
+markdown: kramdown
+timezone: America/New_York
