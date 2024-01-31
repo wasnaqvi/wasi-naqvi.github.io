@@ -1,6 +1,7 @@
-# Undergraduate Physics and Data Science Student
+
 
 ### Education
+-Undergraduate Physics and Data Science Student
 
 ### Work Experience
 Undergraduate Research Assistant @ Centre for Optimization, Convex Analysis and Nonsmooth Analysis(COCANA) Lab
@@ -26,6 +27,10 @@ Physics and Data Science Lead
 
 4. **Cross Matching Gaia's EDR3 data with NASA's Exoplanet Archive**
 
+   
+
 5. **Investigating Myopia in children - A Machine Learning Approach**
    - Utilizing a classification model to analyze the myopic (nearsighted) study1 dataset, which comprises 554 children enrolled in the Orinda Longitudinal Study of Myopia (OLSM). Baseline data from the third grade were evaluated to develop a predictive profile for later onset of juvenile myopia.
+   - The Program,written in R,can be found [here](https://github.com/wasnaqvi/Projects/tree/80d8f7a1a7b0bf187cdb2804af3ed29103ec2ad7/Machine%20Learning)
+
 
