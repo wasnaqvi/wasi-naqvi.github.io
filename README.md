@@ -18,12 +18,12 @@ Physics and Data Science Lead
 # Projects
 
 1. **Finding Exoplanets using TESS**
-   - Jupyter Notebook: [Finding_Analyzing_Exoplanet.ipynb](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/Finding_Analyzing_Exoplanet.ipynb)
+   - Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/Finding_Analyzing_Exoplanet.ipynb)
 
 2. **Using Numerical Methods in Stellar Structure (Coming soon)**
 
 3. **Processing, Stacking, and Handling NGC 891 FITS files from Hubble Space Telescope Data**
-   - Jupyter Notebook: [FITS_Handling_and_Stacking.ipynb](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/FITS_Handling_and_Stacking.ipynb)
+   - Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/FITS_Handling_and_Stacking.ipynb)
 
 4. **Cross Matching Gaia's EDR3 data with NASA's Exoplanet Archive**
 
