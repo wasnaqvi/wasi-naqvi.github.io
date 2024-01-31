@@ -14,14 +14,19 @@ Physics and Data Science Lead
 -Analog Electronics, Circuit Analysis. Assisting the Engineering Team with circuit theory and uncertainty analysis
 
 ### Projects 
--[Finding Exoplanets using TESS data](https://github.com/wasnaqvi/wasi-naqvi.github.io/blob/334432d50a61ae66da34b570dc489f1a87c27fe6/Exoplanets/Finding_Analyzing_Exoplanet.ipynb)
+-[Finding Exoplanets using TESS](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/Finding_Analyzing_Exoplanet.ipynb)
+
 -Using Numerical Methods in Stellar Structure(Coming soon)
 
--Finding a Trinary System with 
+-Processing, Stacking, and Handling NGC 891 FITS files from Hubble Space Telescope Data
+The Program,written in Jupyter Notebook, can be found [here](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/FITS_Handling_and_Stacking.ipynb)
+
+
 -Cross Matching Gaia's EDR3 data with NASA's Exoplanet Archive
 
 
 -Investingating Myopia in children- A Machine Learning Approach
+
 Using a classification Model to analyze the myopic (nearsighted) study1 data set which comprise 554 children
 enrolled in the Orinda Longitudinal Study of Myopia (OLSM) as nonmyopes with baseline data
 from the third grade were evaluated to develop a predictive profile for later onset of juvenile
