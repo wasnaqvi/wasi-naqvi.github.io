@@ -14,12 +14,10 @@ Physics and Data Science Lead
 -Analog Electronics, Circuit Analysis. Assisting the Engineering Team with circuit theory and uncertainty analysis
 
 ### Projects 
--Finding Exoplanets using TESS data
-
+-[Finding Exoplanets using TESS data](https://github.com/wasnaqvi/wasi-naqvi.github.io/blob/334432d50a61ae66da34b570dc489f1a87c27fe6/Exoplanets/Finding_Analyzing_Exoplanet.ipynb)
 -Using Numerical Methods in Stellar Structure(Coming soon)
 
 -Finding a Trinary System with 
-
 -Cross Matching Gaia's EDR3 data with NASA's Exoplanet Archive
 
 
