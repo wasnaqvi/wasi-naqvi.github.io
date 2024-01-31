@@ -4,16 +4,7 @@ logo: /assets/headshot-modified.png
 theme: jekyll-theme-minimal
 
 
-# Navigation Menu
-nav:
-  - title: Home
-    url: /
-  - title: Projects
-    url: /https://github.com/wasnaqvi/Projects.git
-  - title: Blog
-    url: /blog
-  - title: Contact
-    url: /contact
+
 
 # Footer Information
 footer:
