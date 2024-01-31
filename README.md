@@ -13,23 +13,19 @@ Physics and Data Science Lead
 -Data Analysis with Python, currently in the processes of designing a machine learning model that will predict atmospheric data for our experiment.
 -Analog Electronics, Circuit Analysis. Assisting the Engineering Team with circuit theory and uncertainty analysis
 
-### Projects 
--[Finding Exoplanets using TESS](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/Finding_Analyzing_Exoplanet.ipynb)
 
--Using Numerical Methods in Stellar Structure(Coming soon)
+# Projects
 
--Processing, Stacking, and Handling NGC 891 FITS files from Hubble Space Telescope Data
-The Program,written in Jupyter Notebook, can be found [here](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/FITS_Handling_and_Stacking.ipynb)
+1. **Finding Exoplanets using TESS**
+   - Jupyter Notebook: [Finding_Analyzing_Exoplanet.ipynb](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/Finding_Analyzing_Exoplanet.ipynb)
 
+2. **Using Numerical Methods in Stellar Structure (Coming soon)**
 
--Cross Matching Gaia's EDR3 data with NASA's Exoplanet Archive
+3. **Processing, Stacking, and Handling NGC 891 FITS files from Hubble Space Telescope Data**
+   - Jupyter Notebook: [FITS_Handling_and_Stacking.ipynb](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/FITS_Handling_and_Stacking.ipynb)
 
+4. **Cross Matching Gaia's EDR3 data with NASA's Exoplanet Archive**
 
--Investingating Myopia in children- A Machine Learning Approach
-
-Using a classification Model to analyze the myopic (nearsighted) study1 data set which comprise 554 children
-enrolled in the Orinda Longitudinal Study of Myopia (OLSM) as nonmyopes with baseline data
-from the third grade were evaluated to develop a predictive profile for later onset of juvenile
-myopia.
-
+5. **Investigating Myopia in children - A Machine Learning Approach**
+   - Utilizing a classification model to analyze the myopic (nearsighted) study1 dataset, which comprises 554 children enrolled in the Orinda Longitudinal Study of Myopia (OLSM). Baseline data from the third grade were evaluated to develop a predictive profile for later onset of juvenile myopia.
 
