@@ -17,8 +17,9 @@ I also like classical literature, poetry, and Hozier.
 2. **Stacking and Handling NGC 891 FITS files from Hubble Space Telescope Data**
    - Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/FITS_Handling_and_Stacking.ipynb)
 
-3. **Cross Matching Gaia's EDR3 data with NASA's Exoplanet Archive**
-   
+3. **Plots, Plots, Plots, and Plots**
+   - This notebook contains (yes, you guessed right) plots. From Hertzsprung Russell Diagrams to Population Growth Curves, This is just a random assortment of(yes I will say it again) plots.
+   - Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/tree/0c6010eb5ecb9215ce9f61cc53966a44fd37dd6c/Misc)
 
 4. **Investigating Myopia in children - A Machine Learning Approach**
    - Utilizing a classification model to analyze the myopic (nearsighted) study1 dataset, which comprises 554 children enrolled in the Orinda Longitudinal Study of Myopia (OLSM). Baseline data from the third grade were evaluated to develop a predictive profile for later onset of juvenile myopia.
