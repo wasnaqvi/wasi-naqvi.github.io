@@ -11,16 +11,17 @@ I also like classical literature, poetry, and Hozier.
 
 # Projects
 
-1. **Finding Exoplanets using TESS**
-   - Using a combination of lightkurve,astropy, and numpy to probe Kepler and TESS data, using the transit method to find Exoplanets.
-   - A Tutorial-Style Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/Finding_Analyzing_Exoplanet.ipynb)
 
-2. **Stacking and Handling NGC 891 FITS files from Hubble Space Telescope Data**
+1. **Stacking and Handling NGC 891 FITS files from Hubble Space Telescope Data**
    -  Imaging stacking Andromeda's NGC 891 to produce some beautiful rgb images from FITS files. Confirmed stacks using SAO DS9.
    - A Tutorial-Style Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/FITS_Handling_and_Stacking.ipynb)
+     
+2. **Finding Exoplanets using TESS**
+   - Using a combination of lightkurve,astropy, and numpy to probe Kepler and TESS data, using the transit method to find Exoplanets.
+   - A Tutorial-Style Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/blob/f85bf1c755b30397f9e87ca8d69ead7c4f96bb33/Astronomy/Finding_Exoplanets%20(1).ipynb)
 
 3. **Plots, Plots, Plots, and Plots**
-   - This notebook contains (yes, you guessed right) plots. From Gaia EDR3 Data to Population Growth Curves, This is just a random assortment of(yes I will say it again) plots.
+   - This notebook contains (yes, you guessed right) plots. From Gaia EDR3 Data to Population Growth Curves, This is just a random assortment of raw (yes I will say it again) plots.
    - Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/tree/0c6010eb5ecb9215ce9f61cc53966a44fd37dd6c/Misc)
 
 4. **Investigating Myopia in children - A Machine Learning Approach**
