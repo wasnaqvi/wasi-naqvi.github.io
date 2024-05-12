@@ -5,6 +5,8 @@ I also like classical literature, poetry, and Hozier.
 
 
 ### Work Experience
+**Junior Research Scientist @ National Research Council, Herzberg Institute of Astronomy and Astrophysics, Victoria**
+
 **Undergraduate Research Assistant @ Centre for Optimization, Convex Analysis and Nonsmooth Analysis(COCANA) Lab**
 
 **Data Analyst for the Stratospheric Balloon Experiment Team @CAN-SBX**
