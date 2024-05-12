@@ -15,7 +15,7 @@ I also like classical literature, poetry, and Hozier.
 1. **Numerical Solutions to the Stellar Structure Model for Solar Mass and Massive Stars**
    - This study intended to compare the stellar models for massive 8 M⊙ stars to 1M⊙ stars.The models
      yield physical parameters for these Zero Age Main Sequence Stars via numerically solving the Stellar
-Structure Equations.A Runge-Kutta 45 Method is implemented with step size h = 1000 to obtain the8
+Structure Equations.A Runge-Kutta 45 Method is implemented with step size h = 1000 to obtain the
 key parameters. Based 
 off of the values obtained,a comparative analysis of the flux generated is presented. The Study further
 probes into flux generation by providing a reasonable estimate of the solar neutrino flux generated
