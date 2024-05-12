@@ -12,7 +12,7 @@ I also like classical literature, poetry, and Hozier.
 **Data Analyst for the Stratospheric Balloon Experiment Team @CAN-SBX**
 
 # Projects
-1. **Numerical Solutions to the Stellar Structure Model for Solar Mass and Massive Stars**
+1. **Numerical Simulations of the Stellar Structure Model for Solar Mass and Massive Stars**
    - This study intended to compare the stellar models for massive 8 M⊙ stars to 1M⊙ stars.The models
      yield physical parameters for these Zero Age Main Sequence Stars via numerically solving the Stellar
 Structure Equations.A Runge-Kutta 45 Method is implemented with step size h = 1000 to obtain the
