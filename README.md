@@ -9,7 +9,7 @@ I also like classical literature, poetry, and Hozier.
 
 **Undergraduate Research Assistant @ Centre for Optimization, Convex Analysis and Nonsmooth Analysis(COCANA) Lab**
 
-**Data Analyst for the Stratospheric Balloon Experiment Team @CAN-SBX**
+**Data Analyst and Team Member for the Stratospheric Balloon Experiment Team @CAN-SBX**
 
 # Projects
 1. **Numerical Simulations of the Stellar Structure Model for Solar Mass and Massive Stars**
