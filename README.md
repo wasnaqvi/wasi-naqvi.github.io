@@ -10,8 +10,16 @@ I also like classical literature, poetry, and Hozier.
 **Data Analyst for the Stratospheric Balloon Experiment Team @CAN-SBX**
 
 # Projects
-
-
+1. **Numerical Solutions to the Stellar Structure Model for Solar Mass and Massive Stars**
+   - This study intended to compare the stellar models for massive 8 M⊙ stars to 1M⊙ stars.The models
+     yield physical parameters for these Zero Age Main Sequence Stars via numerically solving the Stellar7
+Structure Equations.A Runge-Kutta 45 Method is implemented with step size h = 1000 to obtain the8
+key parameters. Via varying free parameters P and T, we successfully recover 1.01M⊙ corresponding to9
+0.76L⊙ and 0.72R⊙, while for the 8M⊙,the stellar model corresponds to 7.98M⊙ and ≈ 103L⊙.Based10
+off of the values obtained,a comparative analysis of the flux generated is presented. The Study further11
+probes into flux generation by providing a reasonable estimate of the solar neutrino flux generated12
+from fusion inside the core of the Sun
+   - The AAS style report can be found [here](https://www.overleaf.com/read/hxpqkghqzycq#fbf443)
 1. **Stacking and Handling NGC 891 FITS files from Hubble Space Telescope Data**
    -  Imaging stacking Andromeda's NGC 891 to produce some beautiful rgb images from FITS files. Confirmed stacks using SAO DS9.
    - A Tutorial-Style Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/FITS_Handling_and_Stacking.ipynb)
@@ -28,5 +36,6 @@ I also like classical literature, poetry, and Hozier.
    - Utilizing a classification model to analyze the myopic (nearsighted) study1 dataset, which comprises 554 children enrolled in the Orinda Longitudinal Study of Myopia (OLSM). Baseline data from the third grade were evaluated to develop a predictive profile for later onset of juvenile myopia.
    - The Program,written in R,can be found in two parts, [here](https://github.com/wasnaqvi/Projects/tree/f85bf1c755b30397f9e87ca8d69ead7c4f96bb33/Machine%20Learning) and [here](https://github.com/wasnaqvi/Projects/blob/f85bf1c755b30397f9e87ca8d69ead7c4f96bb33/Machine%20Learning/Myopic_Study%2BSalary_Analysis.Rmd)
    
-5. **Using Numerical Methods to solve for Stellar Structure (Coming soon)**
+
+   
 
