@@ -1,6 +1,6 @@
 
 ### Introduction.
-Hi, I'm a third year Physics and Data Science Major, primarily interested in Astronomy. I am passionate about using computational methods to solve problems in Physics. I am also passionate about building and designing experiments. When I am not behind a computer screen, I am on a soccer field.
+Hi, I'm a third year Physics and Data Science Major, primarily interested in Particle Physics and Astrophysics. I am passionate about using computational methods to solve problems in Physics. I am also passionate about building and designing experiments. When I am not behind a computer screen, I am on a soccer field.
 I also like classical literature, poetry, and Hozier.
 
 
