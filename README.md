@@ -20,7 +20,7 @@ key parameters. Based
 off of the values obtained,a comparative analysis of the flux generated is presented. The Study further
 probes into flux generation by providing a reasonable estimate of the solar neutrino flux generated
 from fusion inside the core of the Sun
-   - The AAS style report can be found [here](https://www.overleaf.com/read/hxpqkghqzycq#fbf443)
+   - The AAS style paper can be found [here](https://www.overleaf.com/read/hxpqkghqzycq#fbf443)
 1. **Stacking and Handling NGC 891 FITS files from Hubble Space Telescope Data**
    -  Imaging stacking Andromeda's NGC 891 to produce some beautiful rgb images from FITS files. Confirmed stacks using SAO DS9.
    - A Tutorial-Style Jupyter Notebook can be found [here](https://github.com/wasnaqvi/Projects/blob/e8f102bee628d42406da7042044751cf4f78ed64/Astronomy/FITS_Handling_and_Stacking.ipynb)
