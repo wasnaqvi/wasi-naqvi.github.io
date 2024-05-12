@@ -12,12 +12,11 @@ I also like classical literature, poetry, and Hozier.
 # Projects
 1. **Numerical Solutions to the Stellar Structure Model for Solar Mass and Massive Stars**
    - This study intended to compare the stellar models for massive 8 M⊙ stars to 1M⊙ stars.The models
-     yield physical parameters for these Zero Age Main Sequence Stars via numerically solving the Stellar7
+     yield physical parameters for these Zero Age Main Sequence Stars via numerically solving the Stellar
 Structure Equations.A Runge-Kutta 45 Method is implemented with step size h = 1000 to obtain the8
-key parameters. Via varying free parameters P and T, we successfully recover 1.01M⊙ corresponding to9
-0.76L⊙ and 0.72R⊙, while for the 8M⊙,the stellar model corresponds to 7.98M⊙ and ≈ 103L⊙.Based10
-off of the values obtained,a comparative analysis of the flux generated is presented. The Study further11
-probes into flux generation by providing a reasonable estimate of the solar neutrino flux generated12
+key parameters. Based 
+off of the values obtained,a comparative analysis of the flux generated is presented. The Study further
+probes into flux generation by providing a reasonable estimate of the solar neutrino flux generated
 from fusion inside the core of the Sun
    - The AAS style report can be found [here](https://www.overleaf.com/read/hxpqkghqzycq#fbf443)
 1. **Stacking and Handling NGC 891 FITS files from Hubble Space Telescope Data**
