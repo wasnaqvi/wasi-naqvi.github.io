@@ -1,0 +1,56 @@
+/* Apply the pulsar image background to the entire page */
+body {
+    background-image: url('/assets/pulsar-background.jpg'); /* Replace with your actual pulsar image filename */
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for main content */
+  .main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  
+  /* Style for header */
+  header {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  /* Image styles */
+  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* Personal images section */
+  .personal-images img {
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.9);
+    color: #bbb;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

@@ -2,7 +2,9 @@ title: Wasi Naqvi
 show_downloads: false
 logo: /assets/headshotsm.png
 theme: jekyll-theme-minimal
-
+remote_theme: "minimal"
+plugins:
+  - jekyll-remote-theme
 
 # Footer Information
 footer:
@@ -13,3 +15,7 @@ footer:
 permalink: pretty
 markdown: kramdown
 timezone: America/New_York
+
+# Custom CSS
+include:
+  - assets/styles.css
