@@ -1,10 +1,12 @@
 title: Wasi Naqvi
+description: "Exoplanets, hierarchical Bayesian modelling, and instrumentation."
 show_downloads: false
 logo: /assets/IMG-20251017-WA0078.jpg
+
 theme: jekyll-theme-minimal
-remote_theme: "minimal"
-plugins:
-  - jekyll-remote-theme
+
+header_pages:
+  - index.md
 
 # Footer Information
 footer:

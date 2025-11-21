@@ -1,56 +1,211 @@
-/* Apply the pulsar image background to the entire page */
+/* ---- Global layout with exoplanet background ---- */
+
 body {
-    background-image: url('/assets/pulsar-background.jpg'); /* Replace with your actual pulsar image filename */
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #000;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #f5f7ff;
+  background-color: #020814;
+  background-image:
+    linear-gradient(to bottom, rgba(2, 8, 20, 0.8), rgba(2, 8, 20, 0.95)),
+    url("/assets/exoplanet-background.jpg"); /* your exoplanet art */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Minimal theme wrapper tweaks */
+.wrapper {
+  max-width: 1100px;
+  padding: 2rem 1.5rem 4rem 1.5rem;
+  margin: 0 auto;
+}
+
+/* ---- Header / site title from jekyll-theme-minimal ---- */
+
+.site-header {
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #9ca3ff;
+}
+
+/* ---- Hero section ---- */
+
+.hero {
+  margin-top: 1rem;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent 55%),
+              radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.25), transparent 55%),
+              rgba(3, 7, 28, 0.9);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text {
+  flex: 2 1 260px;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.4rem 0;
+}
+
+.tagline {
+  margin: 0 0 1.2rem 0;
+  font-size: 1rem;
+  color: #e5e7ff;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-photo {
+  flex: 0 0 180px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(191, 219, 254, 0.8);
+  box-shadow: 0 12px 45px rgba(15, 23, 42, 0.9);
+}
+
+/* ---- Buttons ---- */
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #e5e7ff;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(6px);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  border-color: transparent;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.35);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.6);
+}
+
+/* ---- Main content ---- */
+
+.main-content {
+  margin-top: 2rem;
+  padding: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  background: rgba(3, 7, 18, 0.94);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.9);
+}
+
+/* Section styling */
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #c7d2ff;
+  border-bottom: 1px solid rgba(129, 140, 248, 0.35);
+  padding-bottom: 0.35rem;
+}
+
+/* Items in sections */
+
+.item {
+  margin-bottom: 1.4rem;
+}
+
+.item h3 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem 0;
+  color: #e5e7ff;
+}
+
+.location {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #9ca3ff;
+  margin-left: 0.4rem;
+}
+
+.item ul {
+  margin: 0.2rem 0 0.6rem 1.1rem;
+  padding-left: 0;
+}
+
+.item ul li {
+  margin-bottom: 0.2rem;
+}
+
+/* Links */
+
+a {
+  color: #7dd3fc;
+}
+
+a:hover {
+  color: #a5b4fc;
+}
+
+/* Footer */
+
+.site-footer {
+  border: none;
+  font-size: 0.8rem;
+  color: #9ca3ff;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* ---- Responsive tweaks ---- */
+
+@media (max-width: 700px) {
+  .hero-inner {
+    padding: 1.6rem 1.4rem;
   }
-  
-  /* Style for main content */
+
   .main-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2em;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
+    padding: 1.6rem 1.4rem;
   }
-  
-  /* Style for header */
-  header {
-    text-align: center;
-    margin-bottom: 2em;
+
+  .hero-photo {
+    order: -1;
   }
-  
-  /* Image styles */
-  img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+
+  .hero-photo img {
+    width: 140px;
+    height: 140px;
   }
-  
-  /* Personal images section */
-  .personal-images img {
-    margin: 10px;
-    width: 120px;
-    height: 120px;
-    border-radius: 10%;
-    object-fit: cover;
-  }
-  
-  /* Footer styles */
-  footer {
-    text-align: center;
-    padding: 1em;
-    background: rgba(0, 0, 0, 0.9);
-    color: #bbb;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
+}
