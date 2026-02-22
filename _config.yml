@@ -10,6 +10,8 @@ header_pages:
   - research.md
   - blog.md
   - reads.md
+  - hobbies.md
+  - cv.md
 
 # Footer Information
 footer:
