@@ -2,6 +2,7 @@
 layout: default
 title: "My Research"
 permalink: /research/
+body_class: research
 ---
 
 <section class="page-card">
