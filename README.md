@@ -1,6 +1,6 @@
 
 ### Introduction.
-Hi, I'm a first year graduate student at the Trottier Space Institute at McGill University. I did my Bachelors in Physics and Data Science at UBC. I work on Exoplanets - primarily Bayesian Modelling for Population level studies (more on this soon!)  . I am passionate about using computational methods to solve problems in Physics. I am also passionate about building and designing experiments. When I am not behind a computer screen, I am on a soccer field.
+Hi, I'm a first year graduate student at the Trottier Space Institute at McGill University. I did my Bachelors in Physics and Data Science at UBC. I work on Exoplanets - primarily Bayesian Modelling for Population level studies (more on this soon!)  . I am passionate about using computational methods to solve problems in Physics. I am passionate about using not-so-fun statistical methods to solve fun problems. When I am not behind a computer screen, I am on a soccer field.
 I also like classical literature, poetry, and Hozier.
 
 
