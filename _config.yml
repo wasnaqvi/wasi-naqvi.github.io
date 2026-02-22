@@ -7,6 +7,9 @@ theme: jekyll-theme-minimal
 
 header_pages:
   - index.md
+  - research.md
+  - blog.md
+  - reads.md
 
 # Footer Information
 footer:
