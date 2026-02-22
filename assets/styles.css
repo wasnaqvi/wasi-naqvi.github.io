@@ -28,7 +28,7 @@ body.landing {
   background-color: #0b1220;
   background-image:
     linear-gradient(180deg, rgba(7, 14, 26, 0.75), rgba(7, 14, 26, 0.9)),
-    url('/assets/background_2.jpg');
+    url('background_2.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -38,7 +38,7 @@ body.reads {
   background-color: #f3f4f6;
   background-image:
     linear-gradient(180deg, rgba(248, 250, 252, 0.35), rgba(248, 250, 252, 0.55)),
-    url('/assets/library_background.jpg');
+    url('library_background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
