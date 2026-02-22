@@ -2,20 +2,8 @@ title: Wasi Naqvi
 show_downloads: false
 logo: /assets/IMG-20251017-WA0078.jpg
 theme: jekyll-theme-minimal
-remote_theme: "minimal"
-plugins:
-  - jekyll-remote-theme
-
-# Footer Information
-footer:
-  copyright: © 2024 Wasi Naqvi. All rights reserved.
-  powered_by: Powered by Jekyll and GitHub Pages
 
 # Other Settings
 permalink: pretty
 markdown: kramdown
 timezone: America/New_York
-
-# Custom CSS
-include:
-  - assets/styles.css
