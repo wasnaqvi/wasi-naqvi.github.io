@@ -24,7 +24,7 @@ body_class: landing
       </div>
       <div class="landing-buttons">
         <a class="btn primary" href="{{ '/research/' | relative_url }}">My Research</a>
-        <a class="btn" href="{{ '/blog/' | relative_url }}">My Research Blog</a>
+        <a class="btn" href="{{ '/blog/' | relative_url }}">Blog</a>
         <a class="btn" href="{{ '/reads/' | relative_url }}">Reads and Leads</a>
       </div>
     </div>

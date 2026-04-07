@@ -20,27 +20,33 @@ body_class: reads
 <section class="page-card">
   <h2>Currently Reading</h2>
   <ul class="list-plain">
-    <li>[Add current book or paper.]</li>
-    <li>[Add another title.]</li>
+    <li><em>Statistical Rethinking</em> — Richard McElreath</li>
+    <li><em>Mother Mary Comes to Me</em> — Arundhati Roy</li>
+    <li><em>The Old Regime and the Revolution</em> — Alexis de Tocqueville</li>
+    <li><em>The Question of Palestine</em> — Edward Said</li>
+    <li><em>The Wretched of the Earth</em> — Frantz Fanon</li>
   </ul>
 </section>
 
 <section class="page-card">
-  <h2>What I’m Up To</h2>
+  <h2>What I'm Up To</h2>
   <ul class="list-plain">
-    <li>[Add a current project or hobby.]</li>
-    <li>[Add another update.]</li>
+    <li>Writing, writing, and a lot of writing — working on my Astrobites post and various papers.</li>
+    <li>Getting ready for the summer soccer season.</li>
   </ul>
 </section>
 
 <section class="page-card">
   <h2>Hobbies &amp; Curiosities</h2>
   <ul class="list-plain">
-    <li>[Add a hobby or interest.]</li>
+    <li>Calligraphy</li>
+    <li>Pokémon Run and Bun</li>
+    <li>Weight and strength training — taking it seriously enough that it is actually improving my soccer game.</li>
+    <li>Currently deep in Turkic literature.</li>
   </ul>
 </section>
 
 <section class="page-card quote-card">
   <h2>Reading Note</h2>
-  <p>“Books are field notes from the minds I want to explore.”</p>
+  <p>"Books are field notes from the minds I want to explore."</p>
 </section>
