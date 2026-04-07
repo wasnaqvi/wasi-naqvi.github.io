@@ -400,6 +400,24 @@ section h2 {
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.15);
 }
 
+/* Research Vault hero */
+.vault-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.vault-headshot {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid rgba(59, 77, 216, 0.25);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.2);
+}
+
 /* Blog entries */
 .blog-entry-date {
   font-family: 'Cormorant Garamond', 'Times New Roman', serif;

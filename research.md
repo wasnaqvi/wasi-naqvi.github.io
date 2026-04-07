@@ -9,11 +9,13 @@ body_class: research
   <h1>My Research</h1>
   <p>
     I am a first year graduate student at the Trottier Space Institute at McGill University.
-    I work on exoplanets with a focus on Bayesian modelling for population-level studies. I am
-    passionate about using computational methods to solve problems in physics and using
-    rigorous statistics to tackle fun questions.
+    I work on exoplanets with a focus on Bayesian modelling for population-level studies,
+    using computational methods and rigorous statistics to tackle fun questions.
   </p>
   <p>
-   The European Space Agency's Ariel mission will usher in a transformative era in planetary astrophysics by characterizing the atmospheres of ~1000 exoplanets. Ariel aims to measure atmospheric abundance of molecules such as water, sodium, and methane, allowing us to probe for signatures of biological activity in distant worlds. Consequently, New Statistical tools capable of inferring robust trends from planetary populations are needed.I develop HERMES (HiERarchical Modelling for Exoplanet Science), a multidimensional hierarchical modelling framework designed to probe population-level constraints across multiple parameters such as planetary mass, planetary metallicity, and stellar metallicity amid other key parameters. HERMES produces realistic simulated surveys, including measurement noise, intrinsic scatter, and injected trends, allowing us to test how target selection, sample size, and survey leverage influence the precision of inferred trends. These findings could better optimize the survey mission and constrain parameters with high observational uncertainty. The framework is open-source and designed to integrate with observations from JWST and future missions. Having already validated a lower-dimensional prototype, I aim to deploy the full HERMES pipeline as shared infrastructure for Canadian, and European teams. As Ariel prepares to take flight, HERMES will provide the statistical foundations  to yield deeper insight into planetary origins, chemistry, and population diversity, driving the field of comparative exoplanet climatology. Keep a look out on the arxiv next month!
+    I currently work on the Ariel Space Mission. ESA's Ariel will characterise the atmospheres of ~1000 exoplanets, measuring abundances of molecules like water, sodium, and methane. I develop HERMES (HIErarchical Modelling for Exoplanet Science), a hierarchical Bayesian framework that probes population-level constraints across planetary mass, metallicity, and stellar parameters. HERMES is open-source and designed to integrate with JWST and future mission data. Keep a look out on the arXiv!
   </p>
+  <div class="blog-img-single">
+    <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="ESA Ariel Mission">
+  </div>
 </section>
