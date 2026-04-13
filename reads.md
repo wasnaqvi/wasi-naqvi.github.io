@@ -45,8 +45,3 @@ body_class: reads
     <li>Currently deep in Turkic literature.</li>
   </ul>
 </section>
-
-<section class="page-card quote-card">
-  <h2>Reading Note</h2>
-  <p>"Books are field notes from the minds I want to explore."</p>
-</section>

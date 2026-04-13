@@ -13,7 +13,7 @@ body_class: research
     using computational methods and rigorous statistics to tackle fun questions.
   </p>
   <p>
-    I currently work on the Ariel Space Mission. ESA's Ariel will characterise the atmospheres of ~1000 exoplanets, measuring abundances of molecules like water, sodium, and methane. I develop HERMES (HIErarchical Modelling for Exoplanet Science), a hierarchical Bayesian framework that probes population-level constraints across planetary mass, metallicity, and stellar parameters. HERMES is open-source and designed to integrate with JWST and future mission data. Keep a look out on the arXiv!
+    I currently work on the Ariel Space Mission. ESA's Ariel will characterise the atmospheres of ~1000 exoplanets, measuring abundances of molecules like water, sodium, and methane. I develop HERMES (HIErarchical Modelling for Exoplanet Science), a hierarchical Bayesian framework that probes population-level constraints across planetary mass, metallicity, and stellar parameters. HERMES is open-source and designed to integrate with JWST and future mission data. Keep a look out on the arXiv ;-)
   </p>
   <div class="blog-img-single">
     <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="ESA Ariel Mission">
