@@ -11,14 +11,14 @@ body_class: research
 </section>
 
 <section class="page-card blog-entry">
-  <h2 class="blog-entry-date">February 2026</h2>
-  <p>Went to see Hawraa, Safi, Sanaa, and Hamza in Toronto. I had the illusion of being back in Tehran and Karachi at the same time!!!</p>
+  <h2 class="blog-entry-date">March 2026: UK</h2>
+  <p>Went to Bath, London, Salisbury, and Oxford. Saw the sun rise at Stonehenge.</p>
   <div class="blog-img-grid">
-    <img src="{{ '/Website_Pictures/toronto_visit.jpeg' | relative_url }}" alt="Toronto visit">
-    <img src="{{ '/Website_Pictures/toronto_safi.jpeg' | relative_url }}" alt="Toronto with Safi">
-    <img src="{{ '/Website_Pictures/toronto_2.jpeg' | relative_url }}" alt="Toronto">
-    <img src="{{ '/Website_Pictures/toronto_3.jpeg' | relative_url }}" alt="Toronto">
-    <img src="{{ '/Website_Pictures/toronto_4.jpeg' | relative_url }}" alt="Toronto">
+    <img src="{{ '/Website_Pictures/Wasi_Stonehenge.jpeg' | relative_url }}" alt="Sunrise at Stonehenge">
+    <img src="{{ '/Website_Pictures/Stonehenge.jpeg' | relative_url }}" alt="Stonehenge">
+    <img src="{{ '/Website_Pictures/Londonlol.jpeg' | relative_url }}" alt="London">
+    <img src="{{ '/Website_Pictures/magna_carta_salisbury.jpeg' | relative_url }}" alt="Magna Carta, Salisbury">
+    <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="UK trip">
   </div>
 </section>
 
@@ -35,19 +35,19 @@ body_class: research
     <video controls playsinline>
       <source src="{{ '/Website_Pictures/Nutmegging_Morocco_Soccer.mp4' | relative_url }}" type="video/mp4">
     </video>
-    <p class="blog-caption">Nutmeg at 2 AM in Fes. No regrets.</p>
+    <p class="blog-caption">This was during Ramadan in Fes, the street adjacent to Masjid Al Qarawiyyin. It was so heartening to see that Ramadan soccer culture transcends continents!! </p>
   </div>
 </section>
 
 <section class="page-card blog-entry">
-  <h2 class="blog-entry-date">March 2026: UK</h2>
-  <p>Went to Bath, London, Salisbury, and Oxford. Saw the sun rise at Stonehenge.</p>
+  <h2 class="blog-entry-date">February 2026</h2>
+  <p>Went to see Hawraa, Safi, Sanaa, and Hamza in Toronto. I had the illusion of being back in Tehran and Karachi at the same time!!!</p>
   <div class="blog-img-grid">
-    <img src="{{ '/Website_Pictures/Wasi_Stonehenge.jpeg' | relative_url }}" alt="Sunrise at Stonehenge">
-    <img src="{{ '/Website_Pictures/Stonehenge.jpeg' | relative_url }}" alt="Stonehenge">
-    <img src="{{ '/Website_Pictures/Londonlol.jpeg' | relative_url }}" alt="London">
-    <img src="{{ '/Website_Pictures/magna_carta_salisbury.jpeg' | relative_url }}" alt="Magna Carta, Salisbury">
-    <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="UK trip">
+    <img src="{{ '/Website_Pictures/toronto_visit.jpeg' | relative_url }}" alt="Toronto visit">
+    <img src="{{ '/Website_Pictures/toronto_safi.jpeg' | relative_url }}" alt="Toronto with Safi">
+    <img src="{{ '/Website_Pictures/toronto_2.jpeg' | relative_url }}" alt="Toronto">
+    <img src="{{ '/Website_Pictures/toronto_3.jpeg' | relative_url }}" alt="Toronto">
+    <img src="{{ '/Website_Pictures/toronto_4.jpeg' | relative_url }}" alt="Toronto">
   </div>
 </section>
 
