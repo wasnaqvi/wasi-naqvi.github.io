@@ -19,7 +19,7 @@ body_class: research
     <details class="vault-card">
       <summary>
         <span class="vault-title">Won the Ariel Hackathon!</span>
-        <span class="vault-meta">20 March 2026 · Instrumentation</span>
+        <span class="vault-meta">20 March 2026 · Machine Learning</span>
       </summary>
       <div class="vault-body">
         <p>Won the Ariel Hackathon. Solution is up on GitHub.</p>
@@ -33,7 +33,7 @@ body_class: research
         <span class="vault-meta">25 March 2026 · Software</span>
       </summary>
       <div class="vault-body">
-        <p>Final version of HERMES 1.0 is on GitHub. An undergrad is already using it for his research project. Next steps are taking shape after AOC — need to brush up on Clouds, Hazes, and Planet Formation.</p>
+        <p>Final version of HERMES 1.0 is on GitHub. An undergrad is already using it for his research project. Happy with how that came out. Next steps are taking shape after AOC — need to brush up on Clouds, Hazes, and Planet Formation.</p>
         <img src="{{ '/Website_Pictures/Wasi_AOC.jpeg' | relative_url }}" alt="At the Ariel Observer Conference">
       </div>
     </details>
@@ -44,7 +44,7 @@ body_class: research
         <span class="vault-meta">9 April 2026 · Musings</span>
       </summary>
       <div class="vault-body">
-        <p>Writing is hard. Harder than coding. Oral exam for Exoplanets coming up, another JWST proposal due this week. Not saying much except… subneptunes are cool.</p>
+        <p>Writing is hard. Harder than coding. Oral exam for Exoplanets coming up, Another mock JWST proposal due this week. Not saying much except… subneptunes are cool.</p>
       </div>
     </details>
 
