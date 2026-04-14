@@ -26,6 +26,9 @@ body_class: landing
         <a class="btn primary" href="{{ '/research/' | relative_url }}">My Research</a>
         <a class="btn" href="{{ '/blog/' | relative_url }}">Blog</a>
         <a class="btn" href="{{ '/reads/' | relative_url }}">Reads and Leads</a>
+        <a class="btn" href="https://github.com/wasnaqvi" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="https://astrobites.org/author/wnaqvi/" target="_blank" rel="noopener noreferrer">Astrobites</a>
+      </div>
       </div>
     </div>
     <div class="landing-photo">
