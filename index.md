@@ -29,7 +29,6 @@ body_class: landing
         <a class="btn" href="https://github.com/wasnaqvi" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a class="btn" href="https://astrobites.org/author/wnaqvi/" target="_blank" rel="noopener noreferrer">Astrobites</a>
       </div>
-      </div>
     </div>
     <div class="landing-photo">
       <img src="{{ '/assets/me.jpg' | relative_url }}" alt="Photo of Wasi Naqvi">
