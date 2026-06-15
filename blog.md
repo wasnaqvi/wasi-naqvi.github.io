@@ -8,6 +8,7 @@ body_class: research
 <section class="page-card">
   <h1>Blog</h1>
   <p class="hint">Thoughts, travels, and the occasional life update.</p>
+  <p>All research-based updates are now on <a href="https://wasinaqvi.blogspot.com/">wasinaqvi.blogspot.com</a>.</p>
 </section>
 
 <section class="page-card blog-entry">
