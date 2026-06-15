@@ -39,11 +39,12 @@ body_class: research
 
   <h2>HERMES &amp; the Ariel Space Mission</h2>
   <p>
-    My current work develops <a href="https://arxiv.org/abs/2606.02696" target="_blank" rel="noopener noreferrer"><strong>HERMES</strong></a>
-    (HiERarchical Modelling for Exoplanet Science), a multidimensional Bayesian framework for population-level
-    studies of exoplanet atmospheres. HERMES asks how survey design, sample size, measurement noise, and intrinsic
-    astrophysical scatter affect our ability to recover physical trends across planetary mass, atmospheric
-    metallicity, and stellar composition.
+    My current work develops <strong>HERMES</strong> (HiERarchical Modelling for Exoplanet Science), a
+    multidimensional Bayesian framework for population-level studies of exoplanet atmospheres. The HERMES
+    paper is
+    <a href="https://arxiv.org/abs/2606.02696" target="_blank" rel="noopener noreferrer">available on the arXiv (arXiv:2606.02696)</a>.
+    HERMES asks how survey design, sample size, measurement noise, and intrinsic astrophysical scatter affect our
+    ability to recover physical trends across planetary mass, atmospheric metallicity, and stellar composition.
   </p>
   <p>
     Ariel is the natural testbed for this work. By observing a large, diverse sample of exoplanet atmospheres with

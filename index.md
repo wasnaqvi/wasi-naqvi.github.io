@@ -8,7 +8,7 @@ body_class: landing
   <div class="landing-card">
     <div class="landing-text">
       <h1>Wasi M. F. Naqvi (وصی نقوی)</h1>
-      <p class="tagline">Astrophysics Graduate Student · Exoplanetary Atmopheres · Bayesian Modelling</p>
+      <p class="tagline">Astrophysics Graduate Student · Exoplanetary Atmopheres · Artificial Intelligence</p>
       <p class="email-line">
         <span>Email:</span> <a href="mailto:wasi.naqvi@mail.mcgill.ca">wasi.naqvi@mail.mcgill.ca</a>
       </p>
