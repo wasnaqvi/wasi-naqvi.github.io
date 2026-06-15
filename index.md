@@ -28,7 +28,6 @@ body_class: landing
         <a class="btn" href="{{ '/reads/' | relative_url }}">Reads and Leads</a>
         <a class="btn" href="https://github.com/wasnaqvi" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a class="btn" href="https://astrobites.org/author/wnaqvi/" target="_blank" rel="noopener noreferrer">Astrobites</a>
-        <a class="btn coffee" href="https://ko-fi.com/qwasistellar" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a>
       </div>
     </div>
     <div class="landing-photo">

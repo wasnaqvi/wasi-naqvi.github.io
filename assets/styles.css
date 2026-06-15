@@ -96,13 +96,14 @@ body.research {
 .sidebar-coffee {
   display: inline-block;
   align-self: flex-start;
-  padding: 0.55rem 1rem;
+  padding: 0.4rem 0.75rem;
   border-radius: 999px;
-  background: #ff5f5f;
-  color: #ffffff;
+  background: #8a5a3c;
+  color: #fff7ed;
   text-decoration: none;
-  font-weight: 700;
-  box-shadow: 0 10px 24px rgba(255, 95, 95, 0.22);
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(91, 57, 35, 0.16);
 }
 
 .sidebar-footer {
@@ -240,13 +241,6 @@ body.research {
   color: #f8fafc;
   border-color: transparent;
   box-shadow: 0 12px 30px rgba(59, 77, 216, 0.3);
-}
-
-.btn.coffee {
-  background: #ff5f5f;
-  color: #ffffff;
-  border-color: transparent;
-  box-shadow: 0 12px 30px rgba(255, 95, 95, 0.25);
 }
 
 .page-card {
