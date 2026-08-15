@@ -511,8 +511,8 @@ a:hover { color: #ffe3b3; }
 .reading-link { font-size: 1.3rem; font-weight: 600; }
 
 .reading-photo {
-  width: 170px;
-  height: 170px;
+  width: clamp(200px, 20vw, 260px);
+  height: clamp(200px, 20vw, 260px);
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -567,8 +567,8 @@ a:hover { color: #ffe3b3; }
 }
 
 .vault-headshot {
-  width: 160px;
-  height: 160px;
+  width: clamp(200px, 20vw, 260px);
+  height: clamp(200px, 20vw, 260px);
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -793,7 +793,8 @@ a:hover { color: #ffe3b3; }
 
 @media (max-width: 640px) {
   .landing-photo img { width: 160px; height: 160px; }
-  .reading-photo { width: 140px; height: 140px; }
+  .reading-photo { width: 170px; height: 170px; }
+  .vault-headshot { width: 170px; height: 170px; }
   body { font-size: 1rem; }
 }
 
