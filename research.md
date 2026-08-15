@@ -37,6 +37,20 @@ body_class: research
     shape planetary composition? Which correlations are detectable, and which are artifacts?
   </p>
 
+  <div class="paper-highlight">
+    <span class="paper-kicker">New &middot; my first paper</span>
+    <h3>HERMES: HiERarchical Modelling for Exoplanet Science</h3>
+    <p class="paper-authors">Wasi M. F. Naqvi &amp; Nicolas B. Cowan &middot; arXiv:2606.02696</p>
+    <p>
+      A multidimensional Bayesian framework for population-level studies of exoplanet atmospheres &mdash; and
+      the first piece of my thesis to make it out into the world.
+    </p>
+    <div class="paper-links">
+      <a class="primary" href="https://arxiv.org/abs/2606.02696" target="_blank" rel="noopener noreferrer">Read on arXiv</a>
+      <a href="https://arxiv.org/pdf/2606.02696" target="_blank" rel="noopener noreferrer">PDF</a>
+    </div>
+  </div>
+
   <h2>HERMES &amp; the Ariel Space Mission</h2>
   <p>
     My current work develops <strong>HERMES</strong> (HiERarchical Modelling for Exoplanet Science), a
