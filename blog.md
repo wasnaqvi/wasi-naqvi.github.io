@@ -35,12 +35,12 @@ body_class: research
     <video controls playsinline preload="metadata" poster="{{ '/Website_Pictures/Turkey_2026/blue_mosque_poster.jpg' | relative_url }}">
       <source src="{{ '/Website_Pictures/Turkey_2026/blue_mosque_interior.mp4' | relative_url }}" type="video/mp4">
     </video>
-    <p class="blog-caption">Inside the Blue Mosque. The tiles are the reason for the name &mdash; tens of thousands of them, and no photograph gets the blue right. Also: I can&rsquo;t believe there used to be a chain here.</p>
+    <p class="blog-caption">Inside the Blue Mosque. The tiles are the reason for the name &mdash; tens of thousands of them, and no photograph gets the blue right.</p>
   </div>
 
   <div class="blog-img-single">
     <img src="{{ '/Website_Pictures/Turkey_2026/golden_horn.jpg' | relative_url }}" alt="The Golden Horn and the old city skyline seen from the water">
-    <p class="blog-caption">The Golden Horn from the water &mdash; S&uuml;leymaniye on the hill, the New Mosque at the bridgehead, and half the city commuting by ferry.</p>
+    <p class="blog-caption">The Golden Horn from the water &mdash; S&uuml;leymaniye on the hill, the New Mosque at the bridgehead, and half the city commuting by ferry. I can&rsquo;t believe there used to be a chain here.</p>
   </div>
 
   <div class="blog-img-single">
