@@ -8,7 +8,9 @@ body_class: landing
   <div class="landing-card">
     <div class="landing-text reveal visible">
       <p class="kicker">McGill University · Trottier Space Institute</p>
-      <h1>Wasi M. F. Naqvi (وصی نقوی)</h1>
+      <h1>Wasi M. F. Naqvi
+        <span class="name-ar" lang="ar" dir="rtl">وصی نقوی</span>
+      </h1>
       <p class="tagline">
         Astrophysics Graduate Student
         <span class="sep">·</span> Exoplanetary Atmospheres
@@ -57,13 +59,15 @@ body_class: landing
     <a class="log-all" href="https://astrobites.org/author/wnaqvi/" target="_blank" rel="noopener noreferrer">All posts &rarr;</a>
   </div>
   <div class="log-grid">
-    <a class="log-card reveal visible" href="https://astrobites.org/2026/08/13/the-dying-of-the-light/" target="_blank" rel="noopener noreferrer">
+    <a class="log-card has-thumb reveal visible" href="https://astrobites.org/2026/08/13/the-dying-of-the-light/" target="_blank" rel="noopener noreferrer">
+      <img class="log-thumb" src="{{ '/Website_Pictures/DyingLight.jpeg' | relative_url }}" alt="The Dying of the Light">
       <span class="log-date">August 13, 2026</span>
       <span class="log-title">The Dying of the Light</span>
       <span class="log-snippet">Funding cuts are switching off telescopes while orbital data centres brighten the sky. On what we stand to lose, and what can still be done about it.</span>
       <span class="log-more">Read on Astrobites &rarr;</span>
     </a>
-    <a class="log-card reveal visible" href="https://astrobites.org/2026/04/10/tell-me-why-a-case-for-humane-astrophysics/" target="_blank" rel="noopener noreferrer">
+    <a class="log-card has-thumb reveal visible" href="https://astrobites.org/2026/04/10/tell-me-why-a-case-for-humane-astrophysics/" target="_blank" rel="noopener noreferrer">
+      <img class="log-thumb" src="{{ '/Website_Pictures/Qalendar.jpeg' | relative_url }}" alt="Tell Me Why? A Case for Human(e) Astrophysics">
       <span class="log-date">April 10, 2026</span>
       <span class="log-title">Tell Me Why? A Case for Human(e) Astrophysics</span>
       <span class="log-snippet">Why we do astrophysics at all, what machines should and should not take over, and the argument that people are always the ends and never merely the means.</span>

@@ -917,3 +917,31 @@ a:hover { color: #ffe3b3; }
 }
 
 .arxiv-line .arxiv-cite { color: var(--cream-soft); font-size: 0.95rem; }
+
+
+/* ---------- Arabic name line ---------- */
+.name-ar {
+  display: block;
+  margin-top: 0.15em;
+  font-size: 0.86em;
+  font-weight: 500;
+  line-height: 1.5;
+  direction: rtl;
+  unicode-bidi: isolate;
+  text-align: left;
+  color: var(--amber);
+}
+
+/* ---------- Astrobites card thumbnails ---------- */
+.log-card.has-thumb { padding-top: 0; overflow: hidden; }
+
+.log-card .log-thumb {
+  display: block;
+  width: calc(100% + 2.8rem);
+  margin: 0 -1.4rem 0.35rem;
+  height: 170px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.log-card.has-thumb > .log-date { margin-top: 0.9rem; }
