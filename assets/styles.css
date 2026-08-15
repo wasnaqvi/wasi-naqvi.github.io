@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap');
 
 :root {
-  --night: #0b0807;
-  --night-soft: #17110d;
+  --night: #0e0b16;
+  --night-soft: #171226;
   --cream: #f2e9d8;
   --cream-soft: #d9cbb2;
   --muted: #a4947e;
   --amber: #f4cf9a;
   --terra: #c2683d;
   --terra-dark: #9a4e2c;
-  --card: rgba(30, 21, 16, 0.66);
+  --card: rgba(24, 18, 34, 0.62);
   --card-border: rgba(244, 207, 154, 0.14);
   --glow: 0 20px 50px rgba(0, 0, 0, 0.45);
   --radius: 20px;
@@ -28,9 +28,9 @@ body {
   color: var(--cream);
   background-color: var(--night);
   background-image:
-    radial-gradient(ellipse 80% 50% at 15% -10%, rgba(194, 104, 61, 0.20), transparent 60%),
-    radial-gradient(ellipse 60% 45% at 85% 0%, rgba(146, 94, 58, 0.18), transparent 60%),
-    radial-gradient(ellipse 70% 60% at 50% 110%, rgba(46, 29, 19, 0.55), transparent 70%);
+    radial-gradient(ellipse 80% 50% at 15% -10%, rgba(194, 104, 61, 0.16), transparent 60%),
+    radial-gradient(ellipse 60% 45% at 85% 0%, rgba(90, 70, 140, 0.20), transparent 60%),
+    radial-gradient(ellipse 70% 60% at 50% 110%, rgba(40, 28, 60, 0.5), transparent 70%);
   background-attachment: fixed;
   min-height: 100vh;
   display: flex;
@@ -40,7 +40,7 @@ body {
 /* Landing keeps the planet photograph, blended into the same night palette */
 body.landing {
   background-image:
-    linear-gradient(180deg, rgba(11, 8, 7, 0.55) 0%, rgba(11, 8, 7, 0.80) 70%, var(--night) 100%),
+    linear-gradient(180deg, rgba(14, 11, 22, 0.55) 0%, rgba(14, 11, 22, 0.78) 70%, var(--night) 100%),
     url('background_2.jpg');
   background-size: cover;
   background-position: center top;
@@ -192,13 +192,13 @@ body.landing {
   z-index: 1;
   flex: 1;
   width: 100%;
-  max-width: 1120px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 7.5rem clamp(1.2rem, 4vw, 3rem) 4rem;
 }
 
 body.landing .content {
-  max-width: 1220px;
+  max-width: 1400px;
 }
 
 /* ---------- Typography ---------- */
@@ -222,8 +222,8 @@ a:hover { color: #ffe3b3; }
   background: var(--card);
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
-  padding: clamp(1.6rem, 3vw, 2.6rem);
-  margin-bottom: 2rem;
+  padding: clamp(2rem, 3.4vw, 3.5rem);
+  margin-bottom: 2.4rem;
   box-shadow: var(--glow);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -304,8 +304,8 @@ a:hover { color: #ffe3b3; }
 .landing-photo { flex: 0 0 auto; }
 
 .landing-photo img {
-  width: clamp(200px, 24vw, 290px);
-  height: clamp(200px, 24vw, 290px);
+  width: clamp(250px, 30vw, 390px);
+  height: clamp(250px, 30vw, 390px);
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(244, 207, 154, 0.5);
@@ -874,3 +874,46 @@ a:hover { color: #ffe3b3; }
   background: var(--terra-dark);
   border-color: var(--terra-dark);
 }
+
+
+/* ---------- Inline arXiv callout ---------- */
+.arxiv-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 1.4rem 0 1.6rem;
+  padding: 0.95rem 1.2rem;
+  border: 1px solid rgba(244, 207, 154, 0.3);
+  border-left: 3px solid var(--terra);
+  border-radius: 14px;
+  background: rgba(194, 104, 61, 0.10);
+}
+
+.arxiv-line .arxiv-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.arxiv-line a.arxiv-btn {
+  display: inline-block;
+  padding: 0.45rem 1.15rem;
+  border-radius: 999px;
+  background: var(--terra);
+  border: 1px solid var(--terra);
+  color: #fff5ea;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.arxiv-line a.arxiv-btn:hover {
+  background: var(--terra-dark);
+  transform: translateY(-1px);
+}
+
+.arxiv-line .arxiv-cite { color: var(--cream-soft); font-size: 0.95rem; }
