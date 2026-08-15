@@ -31,6 +31,28 @@ body_class: research
     <p class="blog-caption">Sultanahmet after dark. The <em>mahya</em> strung between the minarets reads <span lang="ar" dir="rtl" style="font-style:normal;font-size:1.2em;letter-spacing:0;">مُحَمَّدٌ رَسُولُ اللّٰه</span> &mdash; <em>Muhammadun Rasulullah</em>, &ldquo;Muhammad is the Messenger of God.&rdquo; Someone strings those lamps by hand, letter by letter, so the whole square can read it from the tea tables below.</p>
   </div>
 
+  <div class="blog-video">
+    <video controls playsinline preload="metadata">
+      <source src="{{ '/Website_Pictures/Turkey_2026/blue_mosque_interior.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <p class="blog-caption">Inside the Blue Mosque. The tiles are the reason for the name &mdash; tens of thousands of them, and no photograph gets the blue right.</p>
+  </div>
+
+  <div class="blog-img-single">
+    <img src="{{ '/Website_Pictures/Turkey_2026/golden_horn.jpg' | relative_url }}" alt="The Golden Horn and the old city skyline seen from the water">
+    <p class="blog-caption">The Golden Horn from the water &mdash; S&uuml;leymaniye on the hill, the New Mosque at the bridgehead, and half the city commuting by ferry.</p>
+  </div>
+
+  <div class="blog-img-single">
+    <img src="{{ '/Website_Pictures/Turkey_2026/bosphorus_sunset.jpg' | relative_url }}" alt="Sunset over the Bosphorus from the promenade">
+    <p class="blog-caption">Sunset on the Bosphorus. Two continents, one strait, and everybody out walking.</p>
+  </div>
+
+  <div class="blog-img-single">
+    <img src="{{ '/Website_Pictures/Turkey_2026/lantern_street.jpg' | relative_url }}" alt="A street strung with coloured lanterns above cafe tables">
+    <p class="blog-caption">Lanterns over the tables. Dinner takes as long as you want it to here.</p>
+  </div>
+
   <div class="blog-img-single">
     <img src="{{ '/Website_Pictures/Turkey_2026/kilim_cat.jpg' | relative_url }}" alt="A cat sitting on a stack of kilims">
     <p class="blog-caption">Istanbul belongs to the cats; the rest of us are visiting. This one had claimed the good kilims.</p>
