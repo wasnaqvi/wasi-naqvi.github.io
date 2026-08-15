@@ -28,7 +28,7 @@ body_class: research
 
   <div class="blog-img-single">
     <img src="{{ '/Website_Pictures/Turkey_2026/blue_mosque_night.jpg' | relative_url }}" alt="The Sultan Ahmed Mosque at night, with a mahya strung between its minarets">
-    <p class="blog-caption">Sultanahmet after dark. The <em>mahya</em> strung between the minarets reads <em>Muhammedun Rasulullah</em>.</p>
+    <p class="blog-caption">Sultanahmet after dark. The <em>mahya</em> strung between the minarets reads <span lang="ar" dir="rtl" style="font-style:normal;font-size:1.2em;letter-spacing:0;">مُحَمَّدٌ رَسُولُ اللّٰه</span> &mdash; <em>Muhammadun Rasulullah</em>, &ldquo;Muhammad is the Messenger of God.&rdquo; Someone strings those lamps by hand, letter by letter, so the whole square can read it from the tea tables below.</p>
   </div>
 
   <div class="blog-img-single">
