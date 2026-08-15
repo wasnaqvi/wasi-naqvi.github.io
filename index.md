@@ -45,7 +45,7 @@ body_class: landing
 
 <section class="log-section home-log reveal">
   <div class="log-header">
-    <h2>Latest from the Research Log</h2>
+    <h2>Latest from My Research Log</h2>
     <a class="log-all" href="https://wasinaqvi.blogspot.com" target="_blank" rel="noopener noreferrer">All posts →</a>
   </div>
   <div class="log-grid" id="log-grid" data-max="3">
@@ -55,7 +55,7 @@ body_class: landing
 
 <section class="log-section home-log reveal">
   <div class="log-header">
-    <h2>Latest from Astrobites</h2>
+    <h2>Latest from My Astrobites</h2>
     <a class="log-all" href="https://astrobites.org/author/wnaqvi/" target="_blank" rel="noopener noreferrer">All posts &rarr;</a>
   </div>
   <div class="log-grid">
