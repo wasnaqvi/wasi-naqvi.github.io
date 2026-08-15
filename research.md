@@ -73,4 +73,47 @@ body_class: research
       <figcaption>Clouds, chemistry, and temperature structure vary across worlds, making population-level tools essential.</figcaption>
     </figure>
   </div>
+
+  <h2>ASTER &amp; Patchwork</h2>
+  <p>
+    HERMES asks what a population of atmospheres can tell us once the measurements exist. The other half of the
+    problem is producing those measurements at survey scale, and that is where my current work sits.
+    <strong>Patchwork</strong> is a pipeline that takes a JWST transit observation from raw detector frames
+    through to a transmission spectrum. <strong>ASTER</strong> is the agent that drives it.
+  </p>
+  <p>
+    A single JWST reduction is a long chain of decisions &mdash; calibration, extraction, systematics, limb
+    darkening, noise modelling &mdash; and each one is defensible in isolation and consequential in aggregate.
+    Doing that once, carefully, is a paper. Doing it consistently across a survey is a different kind of problem,
+    and it is the one I am interested in.
+  </p>
+
+  <div class="blog-img-single">
+    <a href="{{ '/assets/aster_pipeline.png' | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '/assets/aster_pipeline.png' | relative_url }}" alt="ASTER pipeline: from raw JWST frames to an atmospheric posterior">
+    </a>
+    <p class="blog-caption">Raw frames in, atmosphere out. Click to enlarge.</p>
+  </div>
+
+  <p>
+    So far the pipeline has been pointed at targets with published spectra, on the principle that a new tool
+    should first reproduce results someone else already got the hard way. It does. Some of the targets it has
+    since worked through do not have published values yet.
+  </p>
+
+  <div class="blog-img-single">
+    <img src="{{ '/assets/patchwork_whitelight.png' | relative_url }}" alt="A JWST NIRSpec/G395H white-light transit fit from the Patchwork pipeline">
+    <p class="blog-caption">A white-light transit fit, one of many steps between raw frames and a spectrum.</p>
+  </div>
+
+  <p>
+    The design question I find most interesting is not whether an agent can run a pipeline. It can. It is what has
+    to be true before you believe the number that comes out the other end. Most of the work has gone into the parts
+    that refuse: checks that live in the code rather than in a prompt, that stop a bad reduction early and report
+    uncertainty honestly rather than confidently. Scale is only worth having if the results survive the scrutiny a
+    careful hand reduction would get.
+  </p>
+  <p>
+    More on this in time, once it is written up.
+  </p>
 </section>

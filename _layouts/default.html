@@ -5,26 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body class="{{ page.body_class | default: 'page' }}">
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="brand">Wasi Naqvi</div>
-        <nav class="nav">
-          <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Me</a>
-          <a class="nav-link{% if page.url == '/research/' %} active{% endif %}" href="{{ '/research/' | relative_url }}">My Research</a>
-          <a class="nav-link{% if page.url == '/blog/' %} active{% endif %}" href="{{ '/blog/' | relative_url }}">Blog</a>
-          <a class="nav-link{% if page.url == '/reads/' %} active{% endif %}" href="{{ '/reads/' | relative_url }}">Reads and Leads</a>
-          <a class="nav-link{% if page.url == '/hobbies/' %} active{% endif %}" href="{{ '/hobbies/' | relative_url }}">Research Vault</a>
-          <a class="nav-link{% if page.url == '/cv/' %} active{% endif %}" href="{{ '/cv/' | relative_url }}">CV</a>
-        </nav>
-        <a class="sidebar-coffee" href="https://ko-fi.com/qwasistellar" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a>
-        <div class="sidebar-footer">© 2024 Wasi Naqvi</div>
-      </aside>
-      <main class="content">
-        {{ content }}
-      </main>
-    </div>
+    <div class="stars" aria-hidden="true"></div>
+
+    <header class="site-nav" id="site-nav">
+      <a class="brand" href="{{ '/' | relative_url }}">Wasi&nbsp;Naqvi</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav-menu">
+        <a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Me</a>
+        <a class="nav-link{% if page.url == '/research/' %} active{% endif %}" href="{{ '/research/' | relative_url }}">Research</a>
+        <a class="nav-link{% if page.url == '/blog/' %} active{% endif %}" href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a class="nav-link{% if page.url == '/reads/' %} active{% endif %}" href="{{ '/reads/' | relative_url }}">Reads &amp; Leads</a>
+        <a class="nav-link{% if page.url == '/hobbies/' %} active{% endif %}" href="{{ '/hobbies/' | relative_url }}">Research Vault</a>
+        <a class="nav-link{% if page.url == '/cv/' %} active{% endif %}" href="{{ '/cv/' | relative_url }}">CV</a>
+        <a class="nav-coffee" href="https://ko-fi.com/qwasistellar" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© 2026 Wasi Naqvi</span>
+        <span class="footer-dot">·</span>
+        <a href="mailto:wasi.naqvi@mail.mcgill.ca">wasi.naqvi@mail.mcgill.ca</a>
+        <span class="footer-dot">·</span>
+        <a href="https://github.com/wasnaqvi" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="footer-dot">·</span>
+        <a href="https://wasinaqvi.blogspot.com" target="_blank" rel="noopener noreferrer">Research Log</a>
+      </div>
+    </footer>
+
+    <script>
+      // Floating nav: solidify on scroll
+      const nav = document.getElementById('site-nav');
+      const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 24);
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      // Mobile menu
+      const toggle = document.getElementById('nav-toggle');
+      const menu = document.getElementById('nav-menu');
+      toggle.addEventListener('click', () => {
+        const open = menu.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open);
+      });
+
+      // Starfield
+      (() => {
+        const field = document.querySelector('.stars');
+        if (!field) return;
+        const n = 90;
+        let html = '';
+        for (let i = 0; i < n; i++) {
+          const x = Math.random() * 100;
+          const y = Math.random() * 100;
+          const s = (Math.random() * 1.6 + 0.6).toFixed(2);
+          const d = (Math.random() * 6).toFixed(2);
+          const o = (Math.random() * 0.5 + 0.25).toFixed(2);
+          html += `<i style="left:${x}%;top:${y}%;width:${s}px;height:${s}px;--o:${o};animation-delay:${d}s"></i>`;
+        }
+        field.innerHTML = html;
+      })();
+
+      // Fade-up reveal on scroll
+      (() => {
+        const els = document.querySelectorAll('.reveal, .page-card');
+        if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('visible')); return; }
+        const io = new IntersectionObserver(entries => {
+          entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('visible'); io.unobserve(en.target); } });
+        }, { threshold: 0.08 });
+        els.forEach(e => io.observe(e));
+      })();
+    </script>
   </body>
 </html>

@@ -12,6 +12,32 @@ body_class: research
 </section>
 
 <section class="page-card blog-entry">
+  <h2 class="blog-entry-date">August 2026: T&uuml;rkiye</h2>
+  <p>Istanbul. A photo essay, because the place does not need my commentary.</p>
+
+  <div class="blog-img-single">
+    <img src="{{ '/Website_Pictures/Turkey_2026/hagia_sophia_interior.jpg' | relative_url }}" alt="Inside the Hagia Sophia">
+    <p class="blog-caption">The Hagia Sophia. Fifteen centuries of people standing exactly here, looking exactly up.</p>
+  </div>
+
+  <div class="blog-img-grid">
+    <img src="{{ '/Website_Pictures/Turkey_2026/hagia_sophia_mihrab.jpg' | relative_url }}" alt="The mihrab of the Hagia Sophia">
+    <img src="{{ '/Website_Pictures/Turkey_2026/calligraphy_dome.jpg' | relative_url }}" alt="Calligraphic medallion in a dome">
+  </div>
+  <p class="blog-caption">Left: the mihrab, set slightly off the axis of a building that was not originally pointed at Mecca. Right: a dome you have to lie back to read.</p>
+
+  <div class="blog-img-single">
+    <img src="{{ '/Website_Pictures/Turkey_2026/blue_mosque_night.jpg' | relative_url }}" alt="The Sultan Ahmed Mosque at night, with a mahya strung between its minarets">
+    <p class="blog-caption">Sultanahmet after dark. The <em>mahya</em> strung between the minarets reads <em>Muhammedun Rasulullah</em>.</p>
+  </div>
+
+  <div class="blog-img-single">
+    <img src="{{ '/Website_Pictures/Turkey_2026/kilim_cat.jpg' | relative_url }}" alt="A cat sitting on a stack of kilims">
+    <p class="blog-caption">Istanbul belongs to the cats; the rest of us are visiting. This one had claimed the good kilims.</p>
+  </div>
+</section>
+
+<section class="page-card blog-entry">
   <h2 class="blog-entry-date">March 2026: UK</h2>
   <p>Went to Bath, London, Salisbury, and Oxford. Saw the sun rise at Stonehenge.</p>
   <div class="blog-img-grid">

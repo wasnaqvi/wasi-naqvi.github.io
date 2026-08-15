@@ -1,0 +1,41 @@
+<script>
+  // Live feed from wasinaqvi.blogspot.com via Blogger JSONP (works on GitHub Pages, no CORS issues)
+  function renderBloggerFeed(data) {
+    const grid = document.getElementById('log-grid');
+    if (!grid) return;
+    const entries = (data.feed && data.feed.entry) || [];
+    if (!entries.length) {
+      grid.innerHTML = '<p class="log-status">No posts yet — check back soon.</p>';
+      return;
+    }
+    const max = parseInt(grid.dataset.max || '6', 10);
+    let html = '';
+    entries.slice(0, max).forEach(e => {
+      const title = e.title.$t || 'Untitled';
+      const link = (e.link.find(l => l.rel === 'alternate') || {}).href || '#';
+      const date = new Date(e.published.$t).toLocaleDateString('en-US', {
+        year: 'numeric', month: 'long', day: 'numeric'
+      });
+      const tmp = document.createElement('div');
+      tmp.innerHTML = (e.content && e.content.$t) || (e.summary && e.summary.$t) || '';
+      const snippet = (tmp.textContent || '').trim().slice(0, 220);
+      html += `
+        <a class="log-card reveal visible" href="${link}" target="_blank" rel="noopener noreferrer">
+          <span class="log-date">${date}</span>
+          <span class="log-title">${title}</span>
+          <span class="log-snippet">${snippet}${snippet.length >= 220 ? '…' : ''}</span>
+          <span class="log-more">Read on the log →</span>
+        </a>`;
+    });
+    grid.innerHTML = html;
+  }
+
+  (function () {
+    const grid = document.getElementById('log-grid');
+    if (!grid) return;
+    const s = document.createElement('script');
+    s.src = 'https://wasinaqvi.blogspot.com/feeds/posts/default?alt=json-in-script&max-results=12&callback=renderBloggerFeed';
+    s.onerror = () => { grid.innerHTML = '<p class="log-status">Could not load the feed. <a href="https://wasinaqvi.blogspot.com" target="_blank" rel="noopener noreferrer">Visit the log directly →</a></p>'; };
+    document.body.appendChild(s);
+  })();
+</script>
