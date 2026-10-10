@@ -1260,3 +1260,29 @@ body.research-doc h3 {
   font-size: clamp(0.78rem, 0.65rem + 0.3vw, 0.95rem) !important;
   line-height: 1.6;
 }
+
+/* Possibility cards: a small pixel planet beside the text. */
+.r-card-planet {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.3rem;
+  align-items: center;
+  overflow: hidden;
+}
+.r-px {
+  width: 120px;
+  height: 120px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  animation: r-px-bob 4.5s ease-in-out infinite;
+}
+.r-card-planet:nth-child(2) .r-px { animation-delay: -1.5s; }
+.r-card-planet:nth-child(3) .r-px { animation-delay: -3s; }
+
+@keyframes r-px-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .r-px { animation: none; }
+}

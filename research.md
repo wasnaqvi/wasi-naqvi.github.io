@@ -48,20 +48,29 @@ body_class: research research-doc
       </p>
     </div>
     <div class="r-cards">
-      <div class="r-card">
-        <span class="r-card-tag">Possibility 1</span>
-        <h3>Rocky core, thin envelope</h3>
-        <p>A rocky interior beneath a thin hydrogen-rich atmosphere.</p>
+      <div class="r-card r-card-planet">
+        <canvas class="r-px" width="40" height="40" data-kind="rocky" aria-hidden="true"></canvas>
+        <div>
+          <span class="r-card-tag">Possibility 1</span>
+          <h3>Rocky core, thin envelope</h3>
+          <p>A rocky interior beneath a thin hydrogen-rich atmosphere.</p>
+        </div>
       </div>
-      <div class="r-card">
-        <span class="r-card-tag">Possibility 2</span>
-        <h3>Water world</h3>
-        <p>A deep water layer beneath a heavy, steam-rich atmosphere.</p>
+      <div class="r-card r-card-planet">
+        <canvas class="r-px" width="40" height="40" data-kind="water" aria-hidden="true"></canvas>
+        <div>
+          <span class="r-card-tag">Possibility 2</span>
+          <h3>Water world</h3>
+          <p>A deep water layer beneath a heavy, steam-rich atmosphere.</p>
+        </div>
       </div>
-      <div class="r-card">
-        <span class="r-card-tag">Possibility 3</span>
-        <h3>Magma world</h3>
-        <p>A largely airless body of molten rock.</p>
+      <div class="r-card r-card-planet">
+        <canvas class="r-px" width="40" height="40" data-kind="lava" aria-hidden="true"></canvas>
+        <div>
+          <span class="r-card-tag">Possibility 3</span>
+          <h3>Lava planet</h3>
+          <p>A largely airless body of molten rock.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -201,3 +210,5 @@ body_class: research research-doc
     </p>
   </div>
 </section>
+
+<script src="{{ '/assets/research-planets.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
