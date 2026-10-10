@@ -87,10 +87,6 @@ body_class: research research-doc
         differences between observations or analysis choices can masquerade as differences between planets.
         So the first job is to work out which differences in the spectra are actually caused by the planets.
       </p>
-      <p>
-        For each planet I measure molecular abundances, atmospheric metallicity and mean molecular weight,
-        while accounting for clouds, hazes, and contamination from the host star.
-      </p>
     </div>
     <figure class="r-fig">
       <img src="{{ '/assets/patchwork_whitelight.png' | relative_url }}" alt="A JWST NIRSpec/G395H white-light transit fit from the Patchwork pipeline">
@@ -171,26 +167,15 @@ body_class: research research-doc
 
 <section class="page-card r-section">
   <h2>ASTER: the agent that runs it</h2>
-  <div class="r-split r-split-even">
-    <div>
-      <p>
-        <strong>ASTER</strong> (Agentic Science Toolkit for Exoplanet Research) is an agentic AI framework for
-        exoplanet analysis, originally built by <strong>Emilie Panek</strong> and collaborators. I am
-        collaborating with Emilie and developing tools for it, including Patchwork's JWST data reduction.
-      </p>
-      <div class="arxiv-line">
-        <span class="arxiv-label">Original work</span>
-        <a class="arxiv-btn" href="https://arxiv.org/abs/2603.26953" target="_blank" rel="noopener noreferrer">arXiv:2603.26953</a>
-        <span class="arxiv-cite">Panek et al. 2026, <em>ASTER &mdash; Agentic Science Toolkit for Exoplanet Research</em></span>
-      </div>
-    </div>
-    <div>
-      <p>
-        An agent can run a pipeline. The hard part is knowing when to believe what comes out. Most of my work
-        is checks that live in the code rather than in a prompt, that stop a bad reduction early and report
-        uncertainty honestly.
-      </p>
-    </div>
+  <p>
+    <strong>ASTER</strong> (Agentic Science Toolkit for Exoplanet Research) is an agentic AI framework for
+    exoplanet analysis, originally built by <strong>Emilie Panek</strong> and collaborators. I am
+    collaborating with Emilie and developing tools for it, including Patchwork's JWST data reduction.
+  </p>
+  <div class="arxiv-line">
+    <span class="arxiv-label">Original work</span>
+    <a class="arxiv-btn" href="https://arxiv.org/abs/2603.26953" target="_blank" rel="noopener noreferrer">arXiv:2603.26953</a>
+    <span class="arxiv-cite">Panek et al. 2026, <em>ASTER &mdash; Agentic Science Toolkit for Exoplanet Research</em></span>
   </div>
   <figure class="r-fig r-fig-full">
     <a href="{{ '/assets/aster_pipeline.png' | relative_url }}" target="_blank" rel="noopener noreferrer">
@@ -213,8 +198,6 @@ body_class: research research-doc
     <p>
       The same measurements decide how the next decade of telescope time is spent. Knowing how many planets
       must be observed, and at what precision, before a trend is detectable is the question Ariel faces now.
-      The pipeline and spectral library will be released as open infrastructure for Qu&eacute;bec, Canadian and
-      European teams, and carry straight over to the surveys that follow.
     </p>
   </div>
 </section>
