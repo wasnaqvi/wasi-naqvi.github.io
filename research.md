@@ -68,7 +68,7 @@ body_class: research research-doc
 </section>
 
 <section class="page-card r-section">
-  <h2>Patchwork: one survey, one analysis</h2>
+  <h2>A Patchwork of Worlds: A Uniform JWST Survey of Sub-Neptune Atmospheres</h2>
   <p class="r-callout">
     I am building the first population-level survey of sub-Neptunes observed with JWST, with every planet
     analysed by the same end-to-end framework.
@@ -165,18 +165,6 @@ body_class: research research-doc
         <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="ESA Ariel Mission">
       </a>
       <figcaption>ESA's Ariel space mission.</figcaption>
-    </figure>
-    <figure class="r-fig">
-      <a href="{{ '/Website_Pictures/WASP-39_b.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ '/Website_Pictures/WASP-39_b.jpg' | relative_url }}" alt="JWST atmosphere composition spectrum for WASP-39 b">
-      </a>
-      <figcaption>JWST's spectrum of WASP-39 b.</figcaption>
-    </figure>
-    <figure class="r-fig r-fig-span">
-      <a href="{{ '/Website_Pictures/Picturing_Exoplanet_Clouds.jpeg' | relative_url }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ '/Website_Pictures/Picturing_Exoplanet_Clouds.jpeg' | relative_url }}" alt="Illustration of different exoplanet cloud types">
-      </a>
-      <figcaption>Clouds, chemistry and temperature vary across worlds.</figcaption>
     </figure>
   </div>
 </section>

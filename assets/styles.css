@@ -1225,7 +1225,6 @@ body.research-doc { font-size: clamp(1.04rem, 0.82rem + 0.3vw, 1.22rem); }
   transition: transform 0.25s ease;
 }
 .r-fig-grid-large a:hover img { transform: scale(1.015); }
-.r-fig-span { grid-column: 1 / -1; }
 .r-fig-full { margin-top: 2.4rem; }
 .r-section .arxiv-line { margin: 1.2rem 0 0; }
 
