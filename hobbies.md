@@ -52,7 +52,7 @@ body_class: research software
      data-palette="ariel" data-seed="71">
     <canvas class="planet-px" width="48" height="48" aria-hidden="true"></canvas>
     <span class="planet-label">
-      <span class="planet-name">Ariel Hackathon</span>
+      <span class="planet-name">ML for Atmospheric Retrievals</span>
       <span class="planet-desc">My winning London Ariel hackathon notebook: machine learning that predicts molecular abundances and temperature from simulated Ariel spectra.</span>
     </span>
   </a>
