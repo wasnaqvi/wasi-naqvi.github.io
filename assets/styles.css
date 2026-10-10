@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@300;400;500;600&family=Press+Start+2P&family=VT323&display=swap');
 
 :root {
   --night: #0e0b16;
@@ -947,33 +947,60 @@ a:hover { color: #ffe3b3; }
 
 .log-card.has-thumb > .log-date { margin-top: 0.9rem; }
 
-/* ---------- Research Vault: floating pixel planets ---------- */
-.orbit-card { padding: 0; overflow: hidden; }
+/* ---------- Research Software: floating pixel planets ---------- */
+/* The field is full-bleed: the page is the planets. */
+body.software .content {
+  max-width: none;
+  padding: 0;
+}
 
 .orbit-field {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem 1.5rem;
-  padding: 2rem 1.25rem;
-  background:
-    radial-gradient(circle at 20% 30%, rgba(90, 70, 140, 0.18), transparent 45%),
-    radial-gradient(circle at 80% 75%, rgba(194, 104, 61, 0.14), transparent 45%);
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 3rem;
+  padding: 7rem 1.25rem 4rem;
+  font-family: 'VT323', ui-monospace, monospace;
 }
 
 .orbit-field.is-floating {
   display: block;
-  height: min(80vh, 720px);
-  min-height: 620px;
+  height: max(100vh, 760px);
   padding: 0;
+  overflow: hidden;
+}
+
+.orbit-head {
+  justify-self: start;
+  max-width: 34rem;
+  pointer-events: none;
+}
+.orbit-field.is-floating .orbit-head {
+  position: absolute;
+  left: clamp(1.5rem, 4vw, 3.5rem);
+  top: 6.5rem;
+}
+.orbit-head h1 {
+  margin: 0 0 0.9rem;
+  font-family: 'Press Start 2P', ui-monospace, monospace;
+  font-size: clamp(1.15rem, 2.6vw, 1.9rem);
+  line-height: 1.4;
+  color: var(--amber);
+  text-shadow: 4px 4px 0 var(--terra-dark);
+}
+.orbit-head p {
+  margin: 0;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  color: var(--cream-soft);
 }
 
 .planet {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 210px;
-  margin: 0 auto;
+  width: 270px;
   text-align: center;
   text-decoration: none;
   color: var(--cream);
@@ -982,14 +1009,14 @@ a:hover { color: #ffe3b3; }
   -webkit-user-select: none;
   animation: planet-bob 6s ease-in-out infinite;
 }
-.planet:nth-child(2) { animation-delay: -1.5s; }
-.planet:nth-child(3) { animation-delay: -3s; }
-.planet:nth-child(4) { animation-delay: -4.5s; }
+.planet:nth-of-type(2) { animation-delay: -1.2s; }
+.planet:nth-of-type(3) { animation-delay: -2.4s; }
+.planet:nth-of-type(4) { animation-delay: -3.6s; }
+.planet:nth-of-type(5) { animation-delay: -4.8s; }
 
 .orbit-field.is-floating .planet {
   position: absolute;
   left: 0; top: 0;
-  margin: 0;
   animation: none;
   cursor: grab;
   will-change: transform;
@@ -998,55 +1025,54 @@ a:hover { color: #ffe3b3; }
 .planet.is-hover { z-index: 2; }
 
 .planet-px {
-  width: 120px;
-  height: 120px;
+  width: 192px;
+  height: 192px;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-  filter: drop-shadow(0 0 18px rgba(244, 207, 154, 0.12));
-  transition: transform 0.25s ease, filter 0.25s ease;
+  filter: drop-shadow(0 0 22px rgba(244, 207, 154, 0.14));
+  transition: transform 0.25s steps(3), filter 0.25s ease;
 }
 .planet.is-hover .planet-px,
 .planet:focus-visible .planet-px {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 26px rgba(244, 207, 154, 0.35));
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 30px rgba(244, 207, 154, 0.38));
 }
 
+/* Pixel "window": hard edges, stepped shadow, no rounding. */
 .planet-label {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  margin-top: 0.35rem;
-  padding: 0.55rem 0.8rem 0.65rem;
-  border-radius: 12px;
-  border: 1px solid transparent;
-  transition: background 0.25s ease, border-color 0.25s ease;
+  gap: 0.45rem;
+  margin-top: 0.2rem;
+  padding: 0.7rem 0.85rem 0.8rem;
+  border: 3px solid transparent;
+  transition: background 0.2s steps(2), border-color 0.2s steps(2);
 }
 .planet.is-hover .planet-label,
 .planet:focus-visible .planet-label {
-  background: rgba(14, 11, 22, 0.82);
-  border-color: var(--card-border);
+  background: var(--night);
+  border-color: var(--amber);
+  box-shadow: 6px 6px 0 var(--terra-dark);
 }
 
 .planet-name {
-  font-family: 'Courier New', ui-monospace, monospace;
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.18em;
+  font-family: 'Press Start 2P', ui-monospace, monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
   text-transform: uppercase;
   color: var(--amber);
 }
-.planet-name::after { content: " ↗"; opacity: 0; transition: opacity 0.2s ease; }
+.planet-name::after { content: " >"; opacity: 0; }
 .planet.is-hover .planet-name::after,
 .planet:focus-visible .planet-name::after { opacity: 1; }
 
 .planet-desc {
-  font-size: 0.86rem;
-  line-height: 1.45;
+  font-size: 1.3rem;
+  line-height: 1.1;
   color: var(--cream-soft);
 }
 
 .planet:focus-visible { outline: none; }
-.planet:focus-visible .planet-label { outline: 2px solid var(--amber); outline-offset: 2px; }
 
 @keyframes planet-bob {
   0%, 100% { transform: translateY(0); }
@@ -1055,4 +1081,144 @@ a:hover { color: #ffe3b3; }
 
 @media (prefers-reduced-motion: reduce) {
   .planet { animation: none; }
+}
+
+/* ---------- Research page: readable column, consistent figures ---------- */
+body.research-doc .content { max-width: 1040px; }
+
+.r-section > p,
+.r-section > ul,
+.r-section > h1,
+.r-section > h2,
+.r-section > .paper-highlight {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.r-section > h2 { margin-top: 0; }
+
+.r-kicker {
+  display: block;
+  max-width: 70ch;
+  margin: 0 auto 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+.r-lead { font-size: 1.16rem; color: var(--cream) !important; }
+
+.r-questions {
+  list-style: none;
+  padding: 0.9rem 0 0.9rem 1.2rem;
+  border-left: 2px solid var(--terra);
+}
+.r-questions li {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.45;
+  color: var(--cream) !important;
+}
+
+.r-fig { margin: 2.2rem auto; max-width: 760px; }
+.r-fig-wide { max-width: 100%; }
+.r-fig img {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--card-border);
+}
+.r-fig-hero img { max-height: 460px; object-fit: cover; }
+.r-fig figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.r-fig-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  margin: 2.2rem 0 0.5rem;
+}
+.r-fig-grid .r-fig { margin: 0; max-width: none; }
+.r-fig-grid img { aspect-ratio: 4 / 3; object-fit: contain; background: var(--night); }
+
+.r-coda { font-style: italic; color: var(--muted) !important; }
+
+@media (max-width: 700px) {
+  .r-fig-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Research page: readable column, consistent figures ---------- */
+body.research-doc .content { max-width: 1040px; }
+
+.r-section > p,
+.r-section > ul,
+.r-section > h1,
+.r-section > h2,
+.r-section > .paper-highlight {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.r-section > h2 { margin-top: 0; }
+
+.r-kicker {
+  display: block;
+  max-width: 70ch;
+  margin: 0 auto 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+.r-lead { font-size: 1.16rem; color: var(--cream) !important; }
+
+.r-questions {
+  list-style: none;
+  padding: 0.9rem 0 0.9rem 1.2rem;
+  border-left: 2px solid var(--terra);
+}
+.r-questions li {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.45;
+  color: var(--cream) !important;
+}
+
+.r-fig { margin: 2.2rem auto; max-width: 760px; }
+.r-fig-wide { max-width: 100%; }
+.r-fig img {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--card-border);
+}
+.r-fig-hero img { max-height: 460px; object-fit: cover; }
+.r-fig figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.r-fig-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  margin: 2.2rem 0 0.5rem;
+}
+.r-fig-grid .r-fig { margin: 0; max-width: none; }
+.r-fig-grid img { aspect-ratio: 4 / 3; object-fit: contain; background: var(--night); }
+
+.r-coda { font-style: italic; color: var(--muted) !important; }
+
+@media (max-width: 700px) {
+  .r-fig-grid { grid-template-columns: 1fr; }
 }

@@ -2,20 +2,21 @@
 layout: default
 title: "My Research"
 permalink: /research/
-body_class: research
+body_class: research research-doc
 ---
 
-<section class="page-card">
+<section class="page-card r-section">
+  <span class="r-kicker">Research</span>
   <h1>A Patchwork of Worlds: AI for Population-Level Studies of Exoplanet Atmospheres</h1>
-  <p>
+  <p class="r-lead">
     My research sits at the intersection of exoplanet atmospheres and artificial intelligence. I am interested
     in how emerging computational tools can move exoplanet science beyond individual case studies and toward
     a true population-level understanding of planetary atmospheres.
   </p>
 
-  <div class="research-hero-image">
+  <figure class="r-fig r-fig-wide r-fig-hero">
     <img src="{{ '/Website_Pictures/Habitable_Worlds.jpg' | relative_url }}" alt="Illustration of habitable worlds compared with Earth">
-  </div>
+  </figure>
 
   <p>
     The next decade of exoplanet science will be defined by scale. The James Webb Space Telescope is already
@@ -32,10 +33,18 @@ body_class: research
   <p>
     This is why I believe novel statistical methods, machine learning, and AI are becoming part of the scientific
     infrastructure of exoplanet atmospheres. The question is not simply whether we can get answers faster. The
-    deeper question is whether we can build tools that allow us to ask better physical questions: How do planetary
-    atmospheres remember formation? How does atmospheric metallicity scale with mass? How does stellar composition
-    shape planetary composition? Which correlations are detectable, and which are artifacts?
+    deeper question is whether we can build tools that allow us to ask better physical questions:
   </p>
+  <ul class="r-questions">
+    <li>How do planetary atmospheres remember formation?</li>
+    <li>How does atmospheric metallicity scale with mass?</li>
+    <li>How does stellar composition shape planetary composition?</li>
+    <li>Which correlations are detectable, and which are artifacts?</li>
+  </ul>
+</section>
+
+<section class="page-card r-section">
+  <h2>HERMES &amp; the Ariel Space Mission</h2>
 
   <div class="paper-highlight">
     <span class="paper-kicker">New &middot; my first paper</span>
@@ -51,19 +60,12 @@ body_class: research
     </div>
   </div>
 
-  <h2>HERMES &amp; the Ariel Space Mission</h2>
   <p>
     My current work develops <strong>HERMES</strong> (HiERarchical Modelling for Exoplanet Science), a
     multidimensional Bayesian framework for population-level studies of exoplanet atmospheres.
     HERMES asks how survey design, sample size, measurement noise, and intrinsic astrophysical scatter affect our
     ability to recover physical trends across planetary mass, atmospheric metallicity, and stellar composition.
   </p>
-
-  <div class="arxiv-line">
-    <span class="arxiv-label">Read the paper</span>
-    <a class="arxiv-btn" href="https://arxiv.org/abs/2606.02696" target="_blank" rel="noopener noreferrer">arXiv:2606.02696</a>
-    <span class="arxiv-cite">Naqvi &amp; Cowan, <em>HERMES: HiERarchical Modelling for Exoplanet Science</em></span>
-  </div>
   <p>
     Ariel is the natural testbed for this work. By observing a large, diverse sample of exoplanet atmospheres with
     a common mission strategy, Ariel will make it possible to compare planets as a population rather than as isolated
@@ -71,27 +73,27 @@ body_class: research
     eventually, into physical constraints on how planetary atmospheres form and evolve.
   </p>
 
-  <div class="blog-img-single">
-    <img src="{{ '/hermes_2d_to_3d.gif' | relative_url }}" alt="HERMES: 2D to 3D hierarchical model visualisation">
-    <p class="blog-caption">HERMES: population inference from 2D to 3D parameter space.</p>
-  </div>
-
-  <div class="blog-img-single">
-    <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="ESA Ariel Mission">
-    <p class="blog-caption">ESA Ariel Space Mission.</p>
-  </div>
-
-  <div class="research-image-grid">
-    <figure>
+  <div class="r-fig-grid">
+    <figure class="r-fig">
+      <img src="{{ '/hermes_2d_to_3d.gif' | relative_url }}" alt="HERMES: 2D to 3D hierarchical model visualisation">
+      <figcaption>HERMES: population inference from 2D to 3D parameter space.</figcaption>
+    </figure>
+    <figure class="r-fig">
+      <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="ESA Ariel Mission">
+      <figcaption>ESA's Ariel space mission.</figcaption>
+    </figure>
+    <figure class="r-fig">
       <img src="{{ '/Website_Pictures/WASP-39_b.jpg' | relative_url }}" alt="JWST atmosphere composition spectrum for WASP-39 b">
       <figcaption>JWST's spectrum of WASP-39 b shows the richness of modern atmospheric characterization.</figcaption>
     </figure>
-    <figure>
+    <figure class="r-fig">
       <img src="{{ '/Website_Pictures/Picturing_Exoplanet_Clouds.jpeg' | relative_url }}" alt="Illustration of different exoplanet cloud types">
       <figcaption>Clouds, chemistry, and temperature structure vary across worlds, making population-level tools essential.</figcaption>
     </figure>
   </div>
+</section>
 
+<section class="page-card r-section">
   <h2>ASTER &amp; Patchwork</h2>
   <p>
     HERMES asks what a population of atmospheres can tell us once the measurements exist. The other half of the
@@ -106,12 +108,12 @@ body_class: research
     and it is the one I am interested in.
   </p>
 
-  <div class="blog-img-single">
+  <figure class="r-fig r-fig-wide">
     <a href="{{ '/assets/aster_pipeline.png' | relative_url }}" target="_blank" rel="noopener noreferrer">
       <img src="{{ '/assets/aster_pipeline.png' | relative_url }}" alt="ASTER pipeline: from raw JWST frames to an atmospheric posterior">
     </a>
-    <p class="blog-caption">Raw frames in, atmosphere out. Click to enlarge.</p>
-  </div>
+    <figcaption>Raw frames in, atmosphere out. Click to enlarge.</figcaption>
+  </figure>
 
   <p>
     So far the pipeline has been pointed at targets with published spectra, on the principle that a new tool
@@ -119,10 +121,10 @@ body_class: research
     since worked through do not have published values yet.
   </p>
 
-  <div class="blog-img-single">
+  <figure class="r-fig">
     <img src="{{ '/assets/patchwork_whitelight.png' | relative_url }}" alt="A JWST NIRSpec/G395H white-light transit fit from the Patchwork pipeline">
-    <p class="blog-caption">A white-light transit fit, one of many steps between raw frames and a spectrum.</p>
-  </div>
+    <figcaption>A white-light transit fit, one of many steps between raw frames and a spectrum.</figcaption>
+  </figure>
 
   <p>
     The design question I find most interesting is not whether an agent can run a pipeline. It can. It is what has
@@ -131,7 +133,5 @@ body_class: research
     uncertainty honestly rather than confidently. Scale is only worth having if the results survive the scrutiny a
     careful hand reduction would get.
   </p>
-  <p>
-    More on this in time, once it is written up.
-  </p>
+  <p class="r-coda">More on this in time, once it is written up.</p>
 </section>

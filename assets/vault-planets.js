@@ -11,6 +11,7 @@
     patchwork: ['#2a140c', '#5c2a18', '#9a4e2c', '#c2683d', '#e39a5c', '#f4cf9a'],
     simorgh:   ['#1f0a1e', '#4a1238', '#8f1f4a', '#d1453b', '#f28a2e', '#ffd36b'],
     magpie:    ['#0b0d14', '#1c2233', '#33405e', '#5b6f99', '#a9b8d6', '#eef2fa'],
+    ariel:     ['#08161a', '#0f3a3a', '#1f6b55', '#4f9e5c', '#a8cf6a', '#eef3c2'],
   };
   const RING = ['#6b5a45', '#a4947e', '#d9cbb2', '#f2e9d8'];
 
@@ -36,6 +37,7 @@
     patchwork: (n)       => (n > 0.52 ? 0.35 + n * 0.75 : n * 0.55),              // patchy continents
     simorgh:   (n, u, v) => Math.pow(n, 1.6) + 0.15 * Math.sin(u * 7 + v * 5),     // molten swirls
     magpie:    (n, u, v) => n * 0.7 + (Math.abs(v) > 0.72 ? 0.5 : 0),             // icy caps
+    ariel:     (n)       => (n > 0.5 ? 0.45 + (n - 0.5) * 1.6 : n * 0.5),          // ocean world, islands
   };
 
   const BAYER = [[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]];
@@ -100,7 +102,7 @@
   }
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const narrow = () => window.matchMedia('(max-width: 640px)').matches;
+  const narrow = () => window.matchMedia('(max-width: 900px)').matches;
 
   const bodies = planets.map((el, i) => {
     const canvas = el.querySelector('canvas');
@@ -120,23 +122,31 @@
     };
   });
 
+  const floating = () => !reduceMotion && !narrow();
+
+  // Planets stay below the page heading so it is never covered.
+  const head = field.querySelector('.orbit-head');
+  let top = 0;
+
   function layout() {
     const W = field.clientWidth, H = field.clientHeight;
+    top = head && floating() ? head.offsetTop + head.offsetHeight + 16 : 0;
+    bodies.forEach(b => { b.w = b.el.offsetWidth; b.h = b.el.offsetHeight; });
+    const tallest = Math.max(...bodies.map(b => b.h));
+    const rows = H - top >= 2 * tallest ? 2 : 1, cols = Math.ceil(bodies.length / rows);
     bodies.forEach((b, i) => {
-      b.w = b.el.offsetWidth; b.h = b.el.offsetHeight;
-      if (!b.placed) {
-        // Start on a loose 2x2 grid so nobody overlaps at load.
-        const col = i % 2, row = Math.floor(i / 2);
-        b.x = (W / 2) * col + (W / 2 - b.w) * (0.25 + Math.random() * 0.5);
-        b.y = (H / 2) * row + (H / 2 - b.h) * (0.2 + Math.random() * 0.5);
+      if (!b.placed && floating()) {
+        // Start on a loose grid, rows staggered, so nobody overlaps at load.
+        const row = Math.floor(i / cols), inRow = row ? bodies.length - cols : cols;
+        const cw = W / inRow, ch = (H - top) / rows, col = i % cols;
+        b.x = cw * col + Math.max(0, cw - b.w) * (0.2 + Math.random() * 0.6);
+        b.y = top + ch * row + Math.max(0, ch - b.h) * (0.2 + Math.random() * 0.6);
         b.placed = true;
       }
       b.x = Math.max(0, Math.min(W - b.w, b.x));
-      b.y = Math.max(0, Math.min(H - b.h, b.y));
+      b.y = Math.max(top, Math.min(H - b.h, b.y));
     });
   }
-
-  const floating = () => !reduceMotion && !narrow();
 
   function apply() {
     const on = floating();
@@ -194,7 +204,7 @@
         const v = Math.hypot(b.vx, b.vy), cruise = 26;
         if (v > cruise) { const k = 1 - Math.min(1, dt * 1.6) * (1 - cruise / v); b.vx *= k; b.vy *= k; }
         if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx); }
-        if (b.y < 0) { b.y = 0; b.vy = Math.abs(b.vy); }
+        if (b.y < top) { b.y = top; b.vy = Math.abs(b.vy); }
         if (b.x > W - b.w) { b.x = W - b.w; b.vx = -Math.abs(b.vx); }
         if (b.y > H - b.h) { b.y = H - b.h; b.vy = -Math.abs(b.vy); }
       }
