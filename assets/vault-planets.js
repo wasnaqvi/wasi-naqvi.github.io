@@ -7,11 +7,11 @@
 
   // Palettes run dark -> light; index chosen by noise + lighting.
   const PALETTES = {
-    hermes:    ['#0d1b2a', '#1b3a57', '#2a6f8f', '#4fa3b8', '#8fd3d1', '#d8f3ec'],
-    patchwork: ['#2a140c', '#5c2a18', '#9a4e2c', '#c2683d', '#e39a5c', '#f4cf9a'],
-    simorgh:   ['#1f0a1e', '#4a1238', '#8f1f4a', '#d1453b', '#f28a2e', '#ffd36b'],
-    magpie:    ['#0b0d14', '#1c2233', '#33405e', '#5b6f99', '#a9b8d6', '#eef2fa'],
-    ariel:     ['#08161a', '#0f3a3a', '#1f6b55', '#4f9e5c', '#a8cf6a', '#eef3c2'],
+    teal:      ['#0d1b2a', '#1b3a57', '#2a6f8f', '#4fa3b8', '#8fd3d1', '#d8f3ec'],
+    rust:      ['#2a140c', '#5c2a18', '#9a4e2c', '#c2683d', '#e39a5c', '#f4cf9a'],
+    ember:     ['#1f0a1e', '#4a1238', '#8f1f4a', '#d1453b', '#f28a2e', '#ffd36b'],
+    ice:       ['#0b0d14', '#1c2233', '#33405e', '#5b6f99', '#a9b8d6', '#eef2fa'],
+    verdant:   ['#08161a', '#0f3a3a', '#1f6b55', '#4f9e5c', '#a8cf6a', '#eef3c2'],
   };
   const RING = ['#6b5a45', '#a4947e', '#d9cbb2', '#f2e9d8'];
 
@@ -33,11 +33,11 @@
 
   // Surface styles: how noise maps to a palette index.
   const STYLE = {
-    hermes:    (n, u, v) => n * 0.5 + 0.5 * (0.5 + 0.5 * Math.sin(v * 9 + n * 4)), // gas bands
-    patchwork: (n)       => (n > 0.52 ? 0.35 + n * 0.75 : n * 0.55),              // patchy continents
-    simorgh:   (n, u, v) => Math.pow(n, 1.6) + 0.15 * Math.sin(u * 7 + v * 5),     // molten swirls
-    magpie:    (n, u, v) => n * 0.7 + (Math.abs(v) > 0.72 ? 0.5 : 0),             // icy caps
-    ariel:     (n)       => (n > 0.5 ? 0.45 + (n - 0.5) * 1.6 : n * 0.5),          // ocean world, islands
+    teal:      (n, u, v) => n * 0.5 + 0.5 * (0.5 + 0.5 * Math.sin(v * 9 + n * 4)), // gas bands
+    rust:      (n)       => (n > 0.52 ? 0.35 + n * 0.75 : n * 0.55),              // patchy continents
+    ember:     (n, u, v) => Math.pow(n, 1.6) + 0.15 * Math.sin(u * 7 + v * 5),     // molten swirls
+    ice:       (n, u, v) => n * 0.7 + (Math.abs(v) > 0.72 ? 0.5 : 0),             // icy caps
+    verdant:   (n)       => (n > 0.5 ? 0.45 + (n - 0.5) * 1.6 : n * 0.5),          // ocean world, islands
   };
 
   const BAYER = [[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]];

@@ -13,7 +13,7 @@ body_class: research software
   </header>
 
   <a class="planet" href="https://github.com/wasnaqvi/HERMES" target="_blank" rel="noopener noreferrer"
-     data-palette="hermes" data-ring="1" data-seed="11">
+     data-palette="rust" data-seed="27">
     <canvas class="planet-px" width="48" height="48" aria-hidden="true"></canvas>
     <span class="planet-label">
       <span class="planet-name">HERMES</span>
@@ -22,7 +22,7 @@ body_class: research software
   </a>
 
   <a class="planet" href="https://github.com/wasnaqvi/maiea" target="_blank" rel="noopener noreferrer"
-     data-palette="patchwork" data-seed="27">
+     data-palette="teal" data-ring="1" data-seed="11">
     <canvas class="planet-px" width="48" height="48" aria-hidden="true"></canvas>
     <span class="planet-label">
       <span class="planet-name">Patchwork</span>
@@ -31,7 +31,7 @@ body_class: research software
   </a>
 
   <a class="planet" href="https://github.com/wasnaqvi/SIMORGH" target="_blank" rel="noopener noreferrer"
-     data-palette="simorgh" data-seed="43">
+     data-palette="ice" data-moon="1" data-seed="59">
     <canvas class="planet-px" width="48" height="48" aria-hidden="true"></canvas>
     <span class="planet-label">
       <span class="planet-name">SIMORGH</span>
@@ -39,17 +39,8 @@ body_class: research software
     </span>
   </a>
 
-  <a class="planet" href="https://github.com/wasnaqvi/magpie" target="_blank" rel="noopener noreferrer"
-     data-palette="magpie" data-moon="1" data-seed="59">
-    <canvas class="planet-px" width="48" height="48" aria-hidden="true"></canvas>
-    <span class="planet-label">
-      <span class="planet-name">MAGPIE</span>
-      <span class="planet-desc">An X/Twitter search console for social-science students that verifies every link it finds, so the results can be cited.</span>
-    </span>
-  </a>
-
   <a class="planet" href="https://github.com/wasnaqvi/colab_notebooks/blob/main/hackathon_starter_solution.ipynb" target="_blank" rel="noopener noreferrer"
-     data-palette="ariel" data-seed="71">
+     data-palette="verdant" data-seed="71">
     <canvas class="planet-px" width="48" height="48" aria-hidden="true"></canvas>
     <span class="planet-label">
       <span class="planet-name">ML for Atmospheric Retrievals</span>
