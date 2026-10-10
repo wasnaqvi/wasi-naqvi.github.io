@@ -127,9 +127,9 @@ body_class: research research-doc
 </section>
 
 <section class="page-card r-section">
-  <div class="r-split">
+  <h2>HERMES &amp; the Ariel mission</h2>
+  <div class="r-split r-split-even">
     <div>
-      <h2>HERMES &amp; the Ariel mission</h2>
       <div class="paper-highlight">
         <span class="paper-kicker">New &middot; my first paper</span>
         <h3>HERMES: HiERarchical Modelling for Exoplanet Science</h3>
@@ -139,6 +139,8 @@ body_class: research research-doc
           <a href="https://arxiv.org/pdf/2606.02696" target="_blank" rel="noopener noreferrer">PDF</a>
         </div>
       </div>
+    </div>
+    <div>
       <p>
         The population analysis builds on <strong>HERMES</strong>, a multidimensional Bayesian framework that
         identifies population-level relationships while separating true astrophysical diversity from
@@ -150,56 +152,64 @@ body_class: research research-doc
         the one Ariel faces as it fixes its target list, and one Canadian astronomers are now at the centre of.
       </p>
     </div>
-    <div class="r-fig-grid">
-      <figure class="r-fig">
+  </div>
+  <div class="r-fig-grid r-fig-grid-large">
+    <figure class="r-fig">
+      <a href="{{ '/hermes_2d_to_3d.gif' | relative_url }}" target="_blank" rel="noopener noreferrer">
         <img src="{{ '/hermes_2d_to_3d.gif' | relative_url }}" alt="HERMES: 2D to 3D hierarchical model visualisation">
-        <figcaption>HERMES: population inference from 2D to 3D parameter space.</figcaption>
-      </figure>
-      <figure class="r-fig">
+      </a>
+      <figcaption>HERMES: population inference from 2D to 3D parameter space.</figcaption>
+    </figure>
+    <figure class="r-fig">
+      <a href="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" target="_blank" rel="noopener noreferrer">
         <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="ESA Ariel Mission">
-        <figcaption>ESA's Ariel space mission.</figcaption>
-      </figure>
-      <figure class="r-fig">
+      </a>
+      <figcaption>ESA's Ariel space mission.</figcaption>
+    </figure>
+    <figure class="r-fig">
+      <a href="{{ '/Website_Pictures/WASP-39_b.jpg' | relative_url }}" target="_blank" rel="noopener noreferrer">
         <img src="{{ '/Website_Pictures/WASP-39_b.jpg' | relative_url }}" alt="JWST atmosphere composition spectrum for WASP-39 b">
-        <figcaption>JWST's spectrum of WASP-39 b.</figcaption>
-      </figure>
-      <figure class="r-fig">
+      </a>
+      <figcaption>JWST's spectrum of WASP-39 b.</figcaption>
+    </figure>
+    <figure class="r-fig r-fig-span">
+      <a href="{{ '/Website_Pictures/Picturing_Exoplanet_Clouds.jpeg' | relative_url }}" target="_blank" rel="noopener noreferrer">
         <img src="{{ '/Website_Pictures/Picturing_Exoplanet_Clouds.jpeg' | relative_url }}" alt="Illustration of different exoplanet cloud types">
-        <figcaption>Clouds, chemistry and temperature vary across worlds.</figcaption>
-      </figure>
-    </div>
+      </a>
+      <figcaption>Clouds, chemistry and temperature vary across worlds.</figcaption>
+    </figure>
   </div>
 </section>
 
 <section class="page-card r-section">
-  <div class="r-split r-split-wide-fig">
+  <h2>ASTER: the agent that runs it</h2>
+  <div class="r-split r-split-even">
     <div>
-      <h2>ASTER: the agent that runs it</h2>
       <p>
-        A single JWST reduction is a long chain of decisions &mdash; calibration, extraction, systematics, limb
-        darkening, noise modelling &mdash; each defensible in isolation and consequential in aggregate. Doing
-        that once, carefully, is a paper. Doing it consistently across a survey is a different problem.
+        <strong>ASTER</strong> (Agentic Science Toolkit for Exoplanet Research) is an agentic AI framework for
+        exoplanet analysis, originally built by <strong>Emilie Panek</strong> and collaborators. I am
+        collaborating with Emilie and developing tools for it, including Patchwork's JWST data reduction.
       </p>
+      <div class="arxiv-line">
+        <span class="arxiv-label">Original work</span>
+        <a class="arxiv-btn" href="https://arxiv.org/abs/2603.26953" target="_blank" rel="noopener noreferrer">arXiv:2603.26953</a>
+        <span class="arxiv-cite">Panek et al. 2026, <em>ASTER &mdash; Agentic Science Toolkit for Exoplanet Research</em></span>
+      </div>
+    </div>
+    <div>
       <p>
-        Patchwork is developed within <strong>ASTER</strong> (Agentic Science Toolkit for Exoplanet Research),
-        an open agentic AI framework for exoplanet analysis that I help develop. It automates the repetitive
-        stages of JWST data reduction so a large archival sample can be analysed efficiently and reproducibly,
-        and so the same machinery scales to Ariel.
-      </p>
-      <p>
-        The interesting question is not whether an agent can run a pipeline. It can. It is what has to be true
-        before you believe the number that comes out the other end. Most of the work has gone into the parts
-        that refuse: checks that live in the code rather than in a prompt, that stop a bad reduction early and
-        report uncertainty honestly rather than confidently.
+        An agent can run a pipeline. The hard part is knowing when to believe what comes out. Most of my work
+        is checks that live in the code rather than in a prompt, that stop a bad reduction early and report
+        uncertainty honestly.
       </p>
     </div>
-    <figure class="r-fig">
-      <a href="{{ '/assets/aster_pipeline.png' | relative_url }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ '/assets/aster_pipeline.png' | relative_url }}" alt="ASTER pipeline: from raw JWST frames to an atmospheric posterior">
-      </a>
-      <figcaption>Raw frames in, atmosphere out. Click to enlarge.</figcaption>
-    </figure>
   </div>
+  <figure class="r-fig r-fig-full">
+    <a href="{{ '/assets/aster_pipeline.png' | relative_url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ '/assets/aster_pipeline.png' | relative_url }}" alt="ASTER pipeline: from raw JWST frames to an atmospheric posterior">
+    </a>
+    <figcaption>Raw frames in, atmosphere out. Click to enlarge.</figcaption>
+  </figure>
 </section>
 
 <section class="page-card r-section">

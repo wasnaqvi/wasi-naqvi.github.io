@@ -1210,6 +1210,24 @@ body.research-doc { font-size: clamp(1.04rem, 0.82rem + 0.3vw, 1.22rem); }
 .r-fig-grid img { aspect-ratio: 4 / 3; object-fit: contain; background: var(--night); }
 
 .r-section .paper-highlight { margin: 1.4rem 0 1.6rem; }
+.r-split-even > div > .paper-highlight { margin-top: 0; }
+
+/* Full-width figure grid: plots at their natural shape, readable size. */
+.r-fig-grid-large {
+  margin-top: 2.6rem;
+  gap: 2rem;
+  align-items: start;
+}
+.r-fig-grid-large img {
+  aspect-ratio: auto;
+  object-fit: initial;
+  background: #fff;
+  transition: transform 0.25s ease;
+}
+.r-fig-grid-large a:hover img { transform: scale(1.015); }
+.r-fig-span { grid-column: 1 / -1; }
+.r-fig-full { margin-top: 2.4rem; }
+.r-section .arxiv-line { margin: 1.2rem 0 0; }
 
 @media (max-width: 1000px) {
   .r-split, .r-split-wide-fig { grid-template-columns: 1fr; }
