@@ -946,3 +946,113 @@ a:hover { color: #ffe3b3; }
 }
 
 .log-card.has-thumb > .log-date { margin-top: 0.9rem; }
+
+/* ---------- Research Vault: floating pixel planets ---------- */
+.orbit-card { padding: 0; overflow: hidden; }
+
+.orbit-field {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem 1.5rem;
+  padding: 2rem 1.25rem;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(90, 70, 140, 0.18), transparent 45%),
+    radial-gradient(circle at 80% 75%, rgba(194, 104, 61, 0.14), transparent 45%);
+}
+
+.orbit-field.is-floating {
+  display: block;
+  height: min(80vh, 720px);
+  min-height: 620px;
+  padding: 0;
+}
+
+.planet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 210px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: var(--cream);
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  animation: planet-bob 6s ease-in-out infinite;
+}
+.planet:nth-child(2) { animation-delay: -1.5s; }
+.planet:nth-child(3) { animation-delay: -3s; }
+.planet:nth-child(4) { animation-delay: -4.5s; }
+
+.orbit-field.is-floating .planet {
+  position: absolute;
+  left: 0; top: 0;
+  margin: 0;
+  animation: none;
+  cursor: grab;
+  will-change: transform;
+}
+.orbit-field.is-floating .planet.is-dragging { cursor: grabbing; z-index: 3; }
+.planet.is-hover { z-index: 2; }
+
+.planet-px {
+  width: 120px;
+  height: 120px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  filter: drop-shadow(0 0 18px rgba(244, 207, 154, 0.12));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.planet.is-hover .planet-px,
+.planet:focus-visible .planet-px {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 26px rgba(244, 207, 154, 0.35));
+}
+
+.planet-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.35rem;
+  padding: 0.55rem 0.8rem 0.65rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+.planet.is-hover .planet-label,
+.planet:focus-visible .planet-label {
+  background: rgba(14, 11, 22, 0.82);
+  border-color: var(--card-border);
+}
+
+.planet-name {
+  font-family: 'Courier New', ui-monospace, monospace;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+.planet-name::after { content: " ↗"; opacity: 0; transition: opacity 0.2s ease; }
+.planet.is-hover .planet-name::after,
+.planet:focus-visible .planet-name::after { opacity: 1; }
+
+.planet-desc {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--cream-soft);
+}
+
+.planet:focus-visible { outline: none; }
+.planet:focus-visible .planet-label { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+@keyframes planet-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .planet { animation: none; }
+}
