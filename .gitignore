@@ -5,3 +5,7 @@ _site/
 vendor/
 .claude/
 Website_Pictures/Casca_2026_schedule_v3.pdf
+.DS_Store
+.lock
+Turkey Trip/
+Website_Pictures/agsem_ta_workload_form_en-fillable.pdf
