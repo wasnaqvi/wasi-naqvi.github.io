@@ -5,133 +5,218 @@ permalink: /research/
 body_class: research research-doc
 ---
 
-<section class="page-card r-section">
-  <span class="r-kicker">Research</span>
-  <h1>A Patchwork of Worlds: AI for Population-Level Studies of Exoplanet Atmospheres</h1>
-  <p class="r-lead">
-    My research sits at the intersection of exoplanet atmospheres and artificial intelligence. I am interested
-    in how emerging computational tools can move exoplanet science beyond individual case studies and toward
-    a true population-level understanding of planetary atmospheres.
-  </p>
-
-  <figure class="r-fig r-fig-wide r-fig-hero">
-    <img src="{{ '/Website_Pictures/Habitable_Worlds.jpg' | relative_url }}" alt="Illustration of habitable worlds compared with Earth">
-  </figure>
-
-  <p>
-    The next decade of exoplanet science will be defined by scale. The James Webb Space Telescope is already
-    transforming atmospheric characterization, and ESA's Ariel mission will push the field into a new regime:
-    roughly a thousand planetary atmospheres observed with a common instrument and a common strategy, built
-    to reveal population-level trends.
-  </p>
-  <p>
-    That scale is an extraordinary opportunity, but it also creates a problem. We will have more data than we
-    can reasonably interpret by hand. There are not enough graduate students in the world to manually inspect,
-    retrieve, classify, and interpret every spectrum, target list, and population-level trend that the next
-    generation of missions will produce.
-  </p>
-  <p>
-    This is why I believe novel statistical methods, machine learning, and AI are becoming part of the scientific
-    infrastructure of exoplanet atmospheres. The question is not simply whether we can get answers faster. The
-    deeper question is whether we can build tools that allow us to ask better physical questions:
-  </p>
-  <ul class="r-questions">
-    <li>How do planetary atmospheres remember formation?</li>
-    <li>How does atmospheric metallicity scale with mass?</li>
-    <li>How does stellar composition shape planetary composition?</li>
-    <li>Which correlations are detectable, and which are artifacts?</li>
-  </ul>
+<section class="page-card r-section r-hero">
+  <div class="r-split">
+    <div>
+      <span class="r-kicker">Research</span>
+      <h1>A Patchwork of Worlds</h1>
+      <p class="r-subtitle">AI for population-level studies of exoplanet atmospheres</p>
+      <p class="r-lead">
+        The most common planets in the Galaxy remain the least understood. I study
+        <strong>sub-Neptunes</strong> &mdash; larger than Earth, smaller than Neptune, absent from our own
+        Solar System, and more numerous than every other kind of planet &mdash; not one at a time, but as a
+        population.
+      </p>
+      <div class="r-stats">
+        <div class="r-stat"><span class="r-stat-num">30,000 h</span><span class="r-stat-label">of JWST time for exoplanets across the mission</span></div>
+        <div class="r-stat"><span class="r-stat-num">~1,000</span><span class="r-stat-label">exoplanet atmospheres for ESA's Ariel, which Canada has joined</span></div>
+        <div class="r-stat"><span class="r-stat-num">1</span><span class="r-stat-label">consistent analysis for all of them</span></div>
+      </div>
+    </div>
+    <figure class="r-fig r-fig-hero">
+      <img src="{{ '/Website_Pictures/Habitable_Worlds.jpg' | relative_url }}" alt="Illustration of habitable worlds compared with Earth">
+    </figure>
+  </div>
 </section>
 
 <section class="page-card r-section">
-  <h2>HERMES &amp; the Ariel Space Mission</h2>
-
-  <div class="paper-highlight">
-    <span class="paper-kicker">New &middot; my first paper</span>
-    <h3>HERMES: HiERarchical Modelling for Exoplanet Science</h3>
-    <p class="paper-authors">Wasi M. F. Naqvi &amp; Nicolas B. Cowan &middot; arXiv:2606.02696</p>
-    <p>
-      A multidimensional Bayesian framework for population-level studies of exoplanet atmospheres &mdash; and
-      the first piece of my thesis to make it out into the world.
-    </p>
-    <div class="paper-links">
-      <a class="primary" href="https://arxiv.org/abs/2606.02696" target="_blank" rel="noopener noreferrer">Read on arXiv</a>
-      <a href="https://arxiv.org/pdf/2606.02696" target="_blank" rel="noopener noreferrer">PDF</a>
+  <div class="r-split">
+    <div>
+      <h2>The question</h2>
+      <p>
+        We still cannot say what a typical sub-Neptune actually <em>is</em>. The same mass and radius fit
+        very different worlds, and constraining the abundances of molecules such as water, methane and carbon
+        dioxide is a prerequisite for any statement about what lies beneath an atmosphere &mdash; or about
+        habitability.
+      </p>
+      <p>
+        For the first time, the data to settle this are arriving at scale. We can finally study exoplanets as
+        populations rather than as isolated worlds. The challenge is to combine those observations
+        consistently, to tell genuine planetary diversity apart from observational and analysis effects, and to
+        find the trends that survive: turning a growing archive of individual spectra into a
+        <strong>comparative climatology</strong> of planetary atmospheres.
+      </p>
+    </div>
+    <div class="r-cards">
+      <div class="r-card">
+        <span class="r-card-tag">Possibility 1</span>
+        <h3>Rocky core, thin envelope</h3>
+        <p>A rocky interior beneath a thin hydrogen-rich atmosphere.</p>
+      </div>
+      <div class="r-card">
+        <span class="r-card-tag">Possibility 2</span>
+        <h3>Water world</h3>
+        <p>A deep water layer beneath a heavy, steam-rich atmosphere.</p>
+      </div>
+      <div class="r-card">
+        <span class="r-card-tag">Possibility 3</span>
+        <h3>Magma world</h3>
+        <p>A largely airless body of molten rock.</p>
+      </div>
     </div>
   </div>
+</section>
 
-  <p>
-    My current work develops <strong>HERMES</strong> (HiERarchical Modelling for Exoplanet Science), a
-    multidimensional Bayesian framework for population-level studies of exoplanet atmospheres.
-    HERMES asks how survey design, sample size, measurement noise, and intrinsic astrophysical scatter affect our
-    ability to recover physical trends across planetary mass, atmospheric metallicity, and stellar composition.
+<section class="page-card r-section">
+  <h2>Patchwork: one survey, one analysis</h2>
+  <p class="r-callout">
+    I am building the first population-level survey of sub-Neptunes observed with JWST, with every planet
+    analysed by the same end-to-end framework.
   </p>
-  <p>
-    Ariel is the natural testbed for this work. By observing a large, diverse sample of exoplanet atmospheres with
-    a common mission strategy, Ariel will make it possible to compare planets as a population rather than as isolated
-    case studies. HERMES is built to help turn that survey scale into interpretable science yield forecasts and,
-    eventually, into physical constraints on how planetary atmospheres form and evolve.
-  </p>
+  <div class="r-split">
+    <div>
+      <p>
+        The idea is to <em>stitch together</em> observations of individual worlds into a coherent view of the
+        sub-Neptune population &mdash; hence the name. Public JWST observations from many teams and programmes
+        are reprocessed through one pipeline, so that planets can be compared directly instead of through a
+        stack of separately analysed spectra.
+      </p>
+      <p>
+        Two problems make this hard. Very different atmospheres can produce similar spectra: a thin
+        hydrogen-rich atmosphere can be difficult to tell apart from a much heavier steam-rich one. And
+        differences between observations or analysis choices can masquerade as differences between planets.
+        So the first job is to work out which differences in the spectra are actually caused by the planets.
+      </p>
+      <p>
+        For each planet I measure molecular abundances, atmospheric metallicity and mean molecular weight,
+        while accounting for clouds, hazes, and contamination from the host star.
+      </p>
+    </div>
+    <figure class="r-fig">
+      <img src="{{ '/assets/patchwork_whitelight.png' | relative_url }}" alt="A JWST NIRSpec/G395H white-light transit fit from the Patchwork pipeline">
+      <figcaption>A white-light transit fit, one of many steps between raw detector frames and a spectrum.</figcaption>
+    </figure>
+  </div>
 
-  <div class="r-fig-grid">
+  <div class="r-cards r-cards-row">
+    <div class="r-card">
+      <span class="r-card-tag">Test case</span>
+      <h3>GJ 3090 b, observed twice</h3>
+      <p>
+        One planet's spectrum should be reproducible, yet two JWST visits do not share the same spectral shape.
+        Is it the observations, the analysis, the star, or the atmosphere itself changing?
+      </p>
+    </div>
+    <div class="r-card">
+      <span class="r-card-tag">Test case</span>
+      <h3>TOI-836 b &amp; c, one star</h3>
+      <p>
+        Two planets on opposite sides of the radius valley, the divide between mostly rocky planets and those
+        that keep substantial atmospheres. Same star, same birth environment: why does one keep its air?
+      </p>
+    </div>
+    <div class="r-card">
+      <span class="r-card-tag">Then</span>
+      <h3>The population</h3>
+      <p>
+        How atmospheric properties vary with irradiation, gravity, planetary mass and host-star composition
+        &mdash; which processes decide whether a sub-Neptune acquires, transforms, or retains its atmosphere.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="page-card r-section">
+  <div class="r-split">
+    <div>
+      <h2>HERMES &amp; the Ariel mission</h2>
+      <div class="paper-highlight">
+        <span class="paper-kicker">New &middot; my first paper</span>
+        <h3>HERMES: HiERarchical Modelling for Exoplanet Science</h3>
+        <p class="paper-authors">Wasi M. F. Naqvi &amp; Nicolas B. Cowan &middot; arXiv:2606.02696</p>
+        <div class="paper-links">
+          <a class="primary" href="https://arxiv.org/abs/2606.02696" target="_blank" rel="noopener noreferrer">Read on arXiv</a>
+          <a href="https://arxiv.org/pdf/2606.02696" target="_blank" rel="noopener noreferrer">PDF</a>
+        </div>
+      </div>
+      <p>
+        The population analysis builds on <strong>HERMES</strong>, a multidimensional Bayesian framework that
+        identifies population-level relationships while separating true astrophysical diversity from
+        measurement uncertainty.
+      </p>
+      <p>
+        HERMES also answers a survey-design question: how many planets, measured how precisely, before an
+        apparent trend can be trusted? That turns target selection into a quantitative problem &mdash; exactly
+        the one Ariel faces as it fixes its target list, and one Canadian astronomers are now at the centre of.
+      </p>
+    </div>
+    <div class="r-fig-grid">
+      <figure class="r-fig">
+        <img src="{{ '/hermes_2d_to_3d.gif' | relative_url }}" alt="HERMES: 2D to 3D hierarchical model visualisation">
+        <figcaption>HERMES: population inference from 2D to 3D parameter space.</figcaption>
+      </figure>
+      <figure class="r-fig">
+        <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="ESA Ariel Mission">
+        <figcaption>ESA's Ariel space mission.</figcaption>
+      </figure>
+      <figure class="r-fig">
+        <img src="{{ '/Website_Pictures/WASP-39_b.jpg' | relative_url }}" alt="JWST atmosphere composition spectrum for WASP-39 b">
+        <figcaption>JWST's spectrum of WASP-39 b.</figcaption>
+      </figure>
+      <figure class="r-fig">
+        <img src="{{ '/Website_Pictures/Picturing_Exoplanet_Clouds.jpeg' | relative_url }}" alt="Illustration of different exoplanet cloud types">
+        <figcaption>Clouds, chemistry and temperature vary across worlds.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="page-card r-section">
+  <div class="r-split r-split-wide-fig">
+    <div>
+      <h2>ASTER: the agent that runs it</h2>
+      <p>
+        A single JWST reduction is a long chain of decisions &mdash; calibration, extraction, systematics, limb
+        darkening, noise modelling &mdash; each defensible in isolation and consequential in aggregate. Doing
+        that once, carefully, is a paper. Doing it consistently across a survey is a different problem.
+      </p>
+      <p>
+        Patchwork is developed within <strong>ASTER</strong> (Agentic Science Toolkit for Exoplanet Research),
+        an open agentic AI framework for exoplanet analysis that I help develop. It automates the repetitive
+        stages of JWST data reduction so a large archival sample can be analysed efficiently and reproducibly,
+        and so the same machinery scales to Ariel.
+      </p>
+      <p>
+        The interesting question is not whether an agent can run a pipeline. It can. It is what has to be true
+        before you believe the number that comes out the other end. Most of the work has gone into the parts
+        that refuse: checks that live in the code rather than in a prompt, that stop a bad reduction early and
+        report uncertainty honestly rather than confidently.
+      </p>
+    </div>
     <figure class="r-fig">
-      <img src="{{ '/hermes_2d_to_3d.gif' | relative_url }}" alt="HERMES: 2D to 3D hierarchical model visualisation">
-      <figcaption>HERMES: population inference from 2D to 3D parameter space.</figcaption>
-    </figure>
-    <figure class="r-fig">
-      <img src="{{ '/Website_Pictures/ariel.jpeg' | relative_url }}" alt="ESA Ariel Mission">
-      <figcaption>ESA's Ariel space mission.</figcaption>
-    </figure>
-    <figure class="r-fig">
-      <img src="{{ '/Website_Pictures/WASP-39_b.jpg' | relative_url }}" alt="JWST atmosphere composition spectrum for WASP-39 b">
-      <figcaption>JWST's spectrum of WASP-39 b shows the richness of modern atmospheric characterization.</figcaption>
-    </figure>
-    <figure class="r-fig">
-      <img src="{{ '/Website_Pictures/Picturing_Exoplanet_Clouds.jpeg' | relative_url }}" alt="Illustration of different exoplanet cloud types">
-      <figcaption>Clouds, chemistry, and temperature structure vary across worlds, making population-level tools essential.</figcaption>
+      <a href="{{ '/assets/aster_pipeline.png' | relative_url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ '/assets/aster_pipeline.png' | relative_url }}" alt="ASTER pipeline: from raw JWST frames to an atmospheric posterior">
+      </a>
+      <figcaption>Raw frames in, atmosphere out. Click to enlarge.</figcaption>
     </figure>
   </div>
 </section>
 
 <section class="page-card r-section">
-  <h2>ASTER &amp; Patchwork</h2>
-  <p>
-    HERMES asks what a population of atmospheres can tell us once the measurements exist. The other half of the
-    problem is producing those measurements at survey scale, and that is where my current work sits.
-    <strong>Patchwork</strong> is a pipeline that takes a JWST transit observation from raw detector frames
-    through to a transmission spectrum. <strong>ASTER</strong> is the agent that drives it.
-  </p>
-  <p>
-    A single JWST reduction is a long chain of decisions &mdash; calibration, extraction, systematics, limb
-    darkening, noise modelling &mdash; and each one is defensible in isolation and consequential in aggregate.
-    Doing that once, carefully, is a paper. Doing it consistently across a survey is a different kind of problem,
-    and it is the one I am interested in.
-  </p>
-
-  <figure class="r-fig r-fig-wide">
-    <a href="{{ '/assets/aster_pipeline.png' | relative_url }}" target="_blank" rel="noopener noreferrer">
-      <img src="{{ '/assets/aster_pipeline.png' | relative_url }}" alt="ASTER pipeline: from raw JWST frames to an atmospheric posterior">
-    </a>
-    <figcaption>Raw frames in, atmosphere out. Click to enlarge.</figcaption>
-  </figure>
-
-  <p>
-    So far the pipeline has been pointed at targets with published spectra, on the principle that a new tool
-    should first reproduce results someone else already got the hard way. It does. Some of the targets it has
-    since worked through do not have published values yet.
-  </p>
-
-  <figure class="r-fig">
-    <img src="{{ '/assets/patchwork_whitelight.png' | relative_url }}" alt="A JWST NIRSpec/G395H white-light transit fit from the Patchwork pipeline">
-    <figcaption>A white-light transit fit, one of many steps between raw frames and a spectrum.</figcaption>
-  </figure>
-
-  <p>
-    The design question I find most interesting is not whether an agent can run a pipeline. It can. It is what has
-    to be true before you believe the number that comes out the other end. Most of the work has gone into the parts
-    that refuse: checks that live in the code rather than in a prompt, that stop a bad reduction early and report
-    uncertainty honestly rather than confidently. Scale is only worth having if the results survive the scrutiny a
-    careful hand reduction would get.
-  </p>
-  <p class="r-coda">More on this in time, once it is written up.</p>
+  <h2>Why it matters</h2>
+  <div class="r-split r-split-even">
+    <p>
+      Comparative climatology currently rests on the assumption that independently analysed spectra are
+      interchangeable. A uniform, open sub-Neptune library replaces that assumption with data that can
+      legitimately be compared. And composition is our most direct probe of how these planets formed:
+      metallicity and the carbon-to-oxygen ratio record where in a disk a planet assembled, while mean
+      molecular weight separates a thin hydrogen layer over a rocky core from a deep, volatile-rich interior.
+    </p>
+    <p>
+      The same measurements decide how the next decade of telescope time is spent. Knowing how many planets
+      must be observed, and at what precision, before a trend is detectable is the question Ariel faces now.
+      The pipeline and spectral library will be released as open infrastructure for Qu&eacute;bec, Canadian and
+      European teams, and carry straight over to the surveys that follow.
+    </p>
+  </div>
 </section>

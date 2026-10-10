@@ -1083,142 +1083,163 @@ body.software .content {
   .planet { animation: none; }
 }
 
-/* ---------- Research page: readable column, consistent figures ---------- */
-body.research-doc .content { max-width: 1040px; }
+/* ---------- Research page: wide layout, text beside figures ---------- */
+body.research-doc .content { max-width: 1560px; }
+body.research-doc { font-size: clamp(1.04rem, 0.82rem + 0.3vw, 1.22rem); }
 
-.r-section > p,
-.r-section > ul,
-.r-section > h1,
-.r-section > h2,
-.r-section > .paper-highlight {
-  max-width: 70ch;
-  margin-left: auto;
-  margin-right: auto;
+.r-section h2 {
+  margin-top: 0;
+  font-size: clamp(1.8rem, 1.2rem + 1.2vw, 2.6rem);
 }
-.r-section > h2 { margin-top: 0; }
+.r-section p { max-width: 68ch; }
 
+/* Two columns on wide screens: prose stays readable, the width gets used. */
+.r-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: center;
+}
+.r-split-even { align-items: start; }
+.r-split-wide-fig { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); }
+
+.r-hero h1 {
+  margin: 0;
+  font-size: clamp(2.6rem, 1.4rem + 3vw, 4.6rem);
+  line-height: 1.02;
+}
+.r-subtitle {
+  margin: 0.6rem 0 1.4rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.3rem, 1rem + 0.8vw, 1.9rem);
+  line-height: 1.25;
+  color: var(--amber) !important;
+}
 .r-kicker {
   display: block;
-  max-width: 70ch;
-  margin: 0 auto 0.6rem;
-  font-size: 0.78rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+.r-lead { font-size: 1.15em; color: var(--cream) !important; }
+
+.r-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.r-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem 1.1rem;
+  border-top: 2px solid var(--terra);
+  background: rgba(14, 11, 22, 0.35);
+  border-radius: 0 0 12px 12px;
+}
+.r-stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: clamp(1.7rem, 1.2rem + 1vw, 2.4rem);
+  line-height: 1;
+  color: var(--amber);
+}
+.r-stat-label { font-size: 0.86em; line-height: 1.35; color: var(--cream-soft); }
+
+.r-callout {
+  max-width: none !important;
+  margin: 0 0 2rem;
+  padding: 1.1rem 1.4rem;
+  border-left: 3px solid var(--terra);
+  background: rgba(194, 104, 61, 0.08);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.35rem, 1rem + 0.9vw, 1.9rem);
+  line-height: 1.3;
+  color: var(--cream) !important;
+}
+
+.r-cards { display: grid; gap: 1.1rem; }
+.r-cards-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2.4rem;
+}
+.r-card {
+  padding: 1.3rem 1.4rem 1.4rem;
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  background: rgba(14, 11, 22, 0.4);
+}
+.r-card h3 {
+  margin: 0.3rem 0 0.5rem;
+  font-size: clamp(1.3rem, 1rem + 0.5vw, 1.6rem);
+}
+.r-card p { margin: 0; font-size: 0.95em; line-height: 1.55; }
+.r-card-tag {
+  font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--terra);
 }
-.r-lead { font-size: 1.16rem; color: var(--cream) !important; }
 
-.r-questions {
-  list-style: none;
-  padding: 0.9rem 0 0.9rem 1.2rem;
-  border-left: 2px solid var(--terra);
-}
-.r-questions li {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 1.3rem;
-  line-height: 1.45;
-  color: var(--cream) !important;
-}
-
-.r-fig { margin: 2.2rem auto; max-width: 760px; }
-.r-fig-wide { max-width: 100%; }
+.r-fig { margin: 0; }
 .r-fig img {
   display: block;
   width: 100%;
   border-radius: 14px;
   border: 1px solid var(--card-border);
 }
-.r-fig-hero img { max-height: 460px; object-fit: cover; }
+.r-fig-hero img { aspect-ratio: 4 / 3; object-fit: cover; }
 .r-fig figcaption {
   margin-top: 0.6rem;
-  font-size: 0.9rem;
+  font-size: 0.85em;
   font-style: italic;
   color: var(--muted);
 }
 
 .r-fig-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
-  margin: 2.2rem 0 0.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
 }
-.r-fig-grid .r-fig { margin: 0; max-width: none; }
 .r-fig-grid img { aspect-ratio: 4 / 3; object-fit: contain; background: var(--night); }
 
-.r-coda { font-style: italic; color: var(--muted) !important; }
+.r-section .paper-highlight { margin: 1.4rem 0 1.6rem; }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
+  .r-split, .r-split-wide-fig { grid-template-columns: 1fr; }
+  .r-cards-row { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .r-stats { grid-template-columns: 1fr; }
   .r-fig-grid { grid-template-columns: 1fr; }
 }
 
-/* ---------- Research page: readable column, consistent figures ---------- */
-body.research-doc .content { max-width: 1040px; }
-
-.r-section > p,
-.r-section > ul,
-.r-section > h1,
-.r-section > h2,
-.r-section > .paper-highlight {
-  max-width: 70ch;
-  margin-left: auto;
-  margin-right: auto;
+/* Research page headings share the Research Software pixel type. */
+body.research-doc h1,
+body.research-doc h2,
+body.research-doc h3 {
+  font-family: 'Press Start 2P', ui-monospace, monospace;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--amber);
 }
-.r-section > h2 { margin-top: 0; }
-
-.r-kicker {
-  display: block;
-  max-width: 70ch;
-  margin: 0 auto 0.6rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--terra);
+body.research-doc .r-hero h1 {
+  font-size: clamp(1.6rem, 0.9rem + 2vw, 2.9rem);
+  line-height: 1.3;
+  text-shadow: 4px 4px 0 var(--terra-dark);
 }
-.r-lead { font-size: 1.16rem; color: var(--cream) !important; }
-
-.r-questions {
-  list-style: none;
-  padding: 0.9rem 0 0.9rem 1.2rem;
-  border-left: 2px solid var(--terra);
-}
-.r-questions li {
-  font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
-  font-size: 1.3rem;
+body.research-doc .r-section h2 {
+  font-size: clamp(1.1rem, 0.75rem + 1vw, 1.6rem);
   line-height: 1.45;
-  color: var(--cream) !important;
+  text-shadow: 3px 3px 0 var(--terra-dark);
 }
-
-.r-fig { margin: 2.2rem auto; max-width: 760px; }
-.r-fig-wide { max-width: 100%; }
-.r-fig img {
-  display: block;
-  width: 100%;
-  border-radius: 14px;
-  border: 1px solid var(--card-border);
-}
-.r-fig-hero img { max-height: 460px; object-fit: cover; }
-.r-fig figcaption {
-  margin-top: 0.6rem;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: var(--muted);
-}
-
-.r-fig-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
-  margin: 2.2rem 0 0.5rem;
-}
-.r-fig-grid .r-fig { margin: 0; max-width: none; }
-.r-fig-grid img { aspect-ratio: 4 / 3; object-fit: contain; background: var(--night); }
-
-.r-coda { font-style: italic; color: var(--muted) !important; }
-
-@media (max-width: 700px) {
-  .r-fig-grid { grid-template-columns: 1fr; }
+body.research-doc h3 {
+  font-size: clamp(0.78rem, 0.65rem + 0.3vw, 0.95rem) !important;
+  line-height: 1.6;
 }
