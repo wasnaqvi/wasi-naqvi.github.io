@@ -6,7 +6,7 @@ body_class: research research-doc
 ---
 
 <section class="page-card r-section r-hero">
-  <div class="r-split">
+  <div class="r-split r-split-hero">
     <div>
       <span class="r-kicker">Research</span>
       <h1>A Patchwork of Worlds</h1>
@@ -14,8 +14,7 @@ body_class: research research-doc
       <p class="r-lead">
         The most common planets in the Galaxy remain the least understood. I study
         <strong>sub-Neptunes</strong>: larger than Earth, smaller than Neptune, absent from our own Solar
-        System, yet more numerous than every other kind of planet. I study them not one at a time, but as a
-        population.
+        System, yet more numerous than every other kind of planet.
       </p>
       <div class="r-stats">
         <div class="r-stat"><span class="r-stat-num">30,000 h</span><span class="r-stat-label">of JWST time for exoplanets across the mission</span></div>
@@ -24,7 +23,7 @@ body_class: research research-doc
       </div>
     </div>
     <figure class="r-fig r-fig-hero">
-      <video autoplay loop muted playsinline preload="auto"
+      <video id="hero-video" autoplay loop muted playsinline preload="auto" disablepictureinpicture
              poster="{{ '/assets/patchwork_pixel_stitching_poster.jpg' | relative_url }}"
              aria-label="Animation of pixels stitching together into a patchwork of worlds">
         <source src="{{ '/assets/patchwork_pixel_stitching.mp4' | relative_url }}" type="video/mp4">
@@ -32,6 +31,19 @@ body_class: research research-doc
     </figure>
   </div>
 </section>
+<script>
+  (function () {
+    var v = document.getElementById('hero-video');
+    if (!v) return;
+    v.muted = true;
+    var play = function () { var p = v.play(); if (p && p.catch) p.catch(function () {}); };
+    if (v.readyState >= 2) play(); else v.addEventListener('canplay', play, { once: true });
+    document.addEventListener('visibilitychange', function () { if (!document.hidden) play(); });
+    ['pointerdown', 'touchstart', 'scroll'].forEach(function (e) {
+      window.addEventListener(e, function () { if (v.paused) play(); }, { once: true, passive: true });
+    });
+  })();
+</script>
 
 <section class="page-card r-section">
   <div class="r-split">

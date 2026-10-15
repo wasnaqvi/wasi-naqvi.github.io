@@ -1102,6 +1102,7 @@ body.research-doc { font-size: clamp(1.04rem, 0.82rem + 0.3vw, 1.22rem); }
 }
 .r-split-even { align-items: start; }
 .r-split-wide-fig { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); }
+.r-split-hero { grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr); }
 
 .r-hero h1 {
   margin: 0;
@@ -1237,7 +1238,7 @@ body.research-doc { font-size: clamp(1.04rem, 0.82rem + 0.3vw, 1.22rem); }
 .r-section .arxiv-line { margin: 1.2rem 0 0; }
 
 @media (max-width: 1000px) {
-  .r-split, .r-split-wide-fig { grid-template-columns: 1fr; }
+  .r-split, .r-split-wide-fig, .r-split-hero { grid-template-columns: 1fr; }
   .r-cards-row { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
