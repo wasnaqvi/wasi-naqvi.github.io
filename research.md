@@ -13,8 +13,8 @@ body_class: research research-doc
       <p class="r-subtitle">AI for population-level studies of exoplanet atmospheres</p>
       <p class="r-lead">
         The most common planets in the Galaxy remain the least understood. I study
-        <strong>sub-Neptunes</strong> &mdash; larger than Earth, smaller than Neptune, absent from our own
-        Solar System, and more numerous than every other kind of planet &mdash; not one at a time, but as a
+        <strong>sub-Neptunes</strong>: larger than Earth, smaller than Neptune, absent from our own Solar
+        System, yet more numerous than every other kind of planet. I study them not one at a time, but as a
         population.
       </p>
       <div class="r-stats">
@@ -24,7 +24,11 @@ body_class: research research-doc
       </div>
     </div>
     <figure class="r-fig r-fig-hero">
-      <img src="{{ '/Website_Pictures/Habitable_Worlds.jpg' | relative_url }}" alt="Illustration of habitable worlds compared with Earth">
+      <video autoplay loop muted playsinline preload="auto"
+             poster="{{ '/assets/patchwork_pixel_stitching_poster.jpg' | relative_url }}"
+             aria-label="Animation of pixels stitching together into a patchwork of worlds">
+        <source src="{{ '/assets/patchwork_pixel_stitching.mp4' | relative_url }}" type="video/mp4">
+      </video>
     </figure>
   </div>
 </section>
@@ -36,7 +40,7 @@ body_class: research research-doc
       <p>
         We still cannot say what a typical sub-Neptune actually <em>is</em>. The same mass and radius fit
         very different worlds, and constraining the abundances of molecules such as water, methane and carbon
-        dioxide is a prerequisite for any statement about what lies beneath an atmosphere &mdash; or about
+        dioxide is a prerequisite for any statement about what lies beneath an atmosphere, or about
         habitability.
       </p>
       <p>
@@ -79,16 +83,22 @@ body_class: research research-doc
 <section class="page-card r-section">
   <h2>A Patchwork of Worlds: A Uniform JWST Survey of Sub-Neptune Atmospheres</h2>
   <p class="r-callout">
-    I am building the first population-level survey of sub-Neptunes observed with JWST, with every planet
-    analysed by the same end-to-end framework.
+    I will conduct the first population-level survey of sub-Neptunes observed with JWST using a consistent
+    end-to-end analysis framework.
   </p>
   <div class="r-split">
     <div>
       <p>
-        The idea is to <em>stitch together</em> observations of individual worlds into a coherent view of the
-        sub-Neptune population &mdash; hence the name. Public JWST observations from many teams and programmes
-        are reprocessed through one pipeline, so that planets can be compared directly instead of through a
-        stack of separately analysed spectra.
+        Rather than studying these planets one at a time, I will use the growing JWST archive to understand
+        sub-Neptune atmospheres as a population: what they are made of, how their properties vary from planet
+        to planet, and what those differences reveal about planetary interiors, formation, and atmospheric
+        evolution.
+      </p>
+      <p>
+        The central idea is to &ldquo;stitch together&rdquo; observations of individual worlds into a coherent
+        view of the sub-Neptune population, hence the name <em>Patchwork</em>. I will reprocess public JWST
+        observations through the same analysis framework so that planets observed by different teams and
+        programs can be compared directly.
       </p>
       <p>
         Two problems make this hard. Very different atmospheres can produce similar spectra: a thin
@@ -124,8 +134,8 @@ body_class: research research-doc
       <span class="r-card-tag">Then</span>
       <h3>The population</h3>
       <p>
-        How atmospheric properties vary with irradiation, gravity, planetary mass and host-star composition
-        &mdash; which processes decide whether a sub-Neptune acquires, transforms, or retains its atmosphere.
+        How atmospheric properties vary with irradiation, gravity, planetary mass and host-star composition:
+        which processes decide whether a sub-Neptune acquires, transforms, or retains its atmosphere.
       </p>
     </div>
   </div>
@@ -153,7 +163,7 @@ body_class: research research-doc
       </p>
       <p>
         HERMES also answers a survey-design question: how many planets, measured how precisely, before an
-        apparent trend can be trusted? That turns target selection into a quantitative problem &mdash; exactly
+        apparent trend can be trusted? That turns target selection into a quantitative problem, exactly
         the one Ariel faces as it fixes its target list, and one Canadian astronomers are now at the centre of.
       </p>
     </div>

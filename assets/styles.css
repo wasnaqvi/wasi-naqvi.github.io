@@ -1195,6 +1195,14 @@ body.research-doc { font-size: clamp(1.04rem, 0.82rem + 0.3vw, 1.22rem); }
   border: 1px solid var(--card-border);
 }
 .r-fig-hero img { aspect-ratio: 4 / 3; object-fit: cover; }
+.r-fig video {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--card-border);
+  background: var(--night);
+}
+.r-fig-hero video { aspect-ratio: 16 / 9; object-fit: cover; }
 .r-fig figcaption {
   margin-top: 0.6rem;
   font-size: 0.85em;
