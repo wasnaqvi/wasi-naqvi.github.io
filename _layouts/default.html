@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{% if page.title and page.title != site.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
@@ -86,5 +86,8 @@
         els.forEach(e => io.observe(e));
       })();
     </script>
+    {% unless page.body_class == 'landing' %}
+    <script src="{{ '/assets/baby-alien.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+    {% endunless %}
   </body>
 </html>

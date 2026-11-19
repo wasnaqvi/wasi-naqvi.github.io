@@ -1295,3 +1295,106 @@ body.research-doc h3 {
 @media (prefers-reduced-motion: reduce) {
   .r-px { animation: none; }
 }
+
+/* ---------- Spacing pass (2026-11) ---------- */
+/* Reading pages get a readable width; landing, research and software keep their own. */
+.content { max-width: 1120px; }
+
+/* Cards: no stray margin at the top or bottom edge of a card. */
+.page-card > :first-child { margin-top: 0; }
+.page-card > :last-child { margin-bottom: 0; }
+:where(.page-card) h1 { margin: 0 0 0.6rem; }
+:where(.page-card) h2 { margin: 0 0 1.1rem; }
+
+/* Reads: hero text sits centred against the photo. */
+.reads-hero h1 { margin-bottom: 0.4rem; }
+.reads-hero p { margin: 0; }
+
+/* Blog: room between photos and their captions. */
+.blog-img-single, .blog-img-grid, .blog-video { margin-top: 1.8rem; }
+.blog-caption { margin-top: 0.7rem; }
+
+/* CV: the toolbar-less iframe card. */
+.cv-viewer-card iframe, .page-card iframe { display: block; border-radius: 12px; margin: 1rem 0 1.2rem; }
+
+/* Home: the two feeds read as separate blocks. */
+.home-log { margin-top: 1.5rem; padding-bottom: 1rem; }
+.home-log + .home-log { margin-top: 3.5rem; }
+.log-header { margin-bottom: 1.4rem; }
+.log-grid { gap: 1.25rem; }
+
+@media (max-width: 640px) {
+  .page-card { padding: 1.6rem 1.3rem; margin-bottom: 1.6rem; }
+  .content { padding-top: 5.5rem; padding-bottom: 3rem; }
+}
+
+/* ---------- Research page polish ---------- */
+body.research-doc .content { max-width: 1480px; }
+body.research-doc .page-card { margin-bottom: 3rem; }
+.r-section { scroll-margin-top: 5.5rem; }
+
+/* Hero: give the title column more room; stats run full width below. */
+@media (min-width: 1001px) {
+  .r-split-hero { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); }
+}
+.r-hero .r-lead { margin-bottom: 0; }
+.r-hero .r-stats {
+  margin-top: clamp(2rem, 3vw, 2.8rem);
+  gap: clamp(1rem, 2vw, 1.6rem);
+}
+.r-stat { padding: 1.1rem 1.3rem 1.2rem; }
+.r-stat-num { white-space: nowrap; }
+
+/* On-page navigation under the hero. */
+.r-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: clamp(1.6rem, 2.4vw, 2.2rem);
+  padding-top: clamp(1.4rem, 2vw, 1.8rem);
+  border-top: 1px solid var(--card-border);
+}
+.r-toc a {
+  padding: 0.4rem 0.95rem;
+  border: 1px solid rgba(244, 207, 154, 0.3);
+  border-radius: 999px;
+  font-size: 0.9em;
+  color: var(--cream-soft);
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.r-toc a:hover {
+  color: var(--cream);
+  background: rgba(244, 207, 154, 0.1);
+  border-color: rgba(244, 207, 154, 0.55);
+}
+
+/* Section numbers: pixel type, small, above each heading. */
+.r-num {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-family: 'Press Start 2P', ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--terra);
+}
+.r-section h2 { margin-bottom: 1.3rem; }
+body.research-doc .r-section > h2 { max-width: 34ch; }
+
+/* Paragraph rhythm inside research prose. */
+:where(.r-section) p { margin: 0 0 1.1em; }
+.r-split > div > p:last-child,
+.r-split-even > p { margin-bottom: 0; }
+.r-cards-row { margin-top: clamp(2rem, 3vw, 2.8rem); gap: 1.25rem; }
+.r-card { padding: 1.4rem 1.5rem 1.5rem; }
+.r-cards:not(.r-cards-row) { gap: 1rem; }
+
+@media (max-width: 1000px) {
+  .r-split { gap: 2rem; }
+  .r-hero .r-fig-hero { order: -1; }
+}
+@media (max-width: 560px) {
+  .r-px { width: 84px; height: 84px; }
+  .r-card-planet { gap: 1rem; }
+  .r-toc a { font-size: 0.85em; }
+}

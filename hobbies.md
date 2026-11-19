@@ -39,12 +39,12 @@ body_class: research software
     </span>
   </a>
 
-  <a class="planet" href="https://github.com/wasnaqvi/colab_notebooks/blob/main/hackathon_starter_solution.ipynb" target="_blank" rel="noopener noreferrer"
+  <a class="planet" href="https://github.com/wasnaqvi/meromixis" target="_blank" rel="noopener noreferrer"
      data-palette="verdant" data-seed="71">
     <canvas class="planet-px" width="48" height="48" aria-hidden="true"></canvas>
     <span class="planet-label">
-      <span class="planet-name">ML for Atmospheric Retrievals</span>
-      <span class="planet-desc">My winning London Ariel hackathon notebook: machine learning that predicts molecular abundances and temperature from simulated Ariel spectra.</span>
+      <span class="planet-name">Meromixis</span>
+      <span class="planet-desc">Something is stratifying beneath the surface. I would tell you what, but some layers are better left undisturbed until they are ready to mix. For now: it concerns depth, it concerns patience, and it has been quietly accumulating in a repository you are welcome to peer into, though you will find it politely uncommunicative.</span>
     </span>
   </a>
 

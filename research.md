@@ -16,11 +16,6 @@ body_class: research research-doc
         <strong>sub-Neptunes</strong>: larger than Earth, smaller than Neptune, absent from our own Solar
         System, yet more numerous than every other kind of planet.
       </p>
-      <div class="r-stats">
-        <div class="r-stat"><span class="r-stat-num">30,000 h</span><span class="r-stat-label">of JWST time for exoplanets across the mission</span></div>
-        <div class="r-stat"><span class="r-stat-num">~1,000</span><span class="r-stat-label">exoplanet atmospheres for ESA's Ariel, which Canada has joined</span></div>
-        <div class="r-stat"><span class="r-stat-num">1</span><span class="r-stat-label">consistent analysis for all of them</span></div>
-      </div>
     </div>
     <figure class="r-fig r-fig-hero">
       <video id="hero-video" autoplay loop muted playsinline preload="auto" disablepictureinpicture
@@ -30,6 +25,18 @@ body_class: research research-doc
       </video>
     </figure>
   </div>
+  <div class="r-stats">
+    <div class="r-stat"><span class="r-stat-num">30,000 h</span><span class="r-stat-label">of JWST time for exoplanets across the mission</span></div>
+    <div class="r-stat"><span class="r-stat-num">~1,000</span><span class="r-stat-label">exoplanet atmospheres for ESA's Ariel, which Canada has joined</span></div>
+    <div class="r-stat"><span class="r-stat-num">1</span><span class="r-stat-label">consistent analysis for all of them</span></div>
+  </div>
+  <nav class="r-toc" aria-label="On this page">
+    <a href="#question">The question</a>
+    <a href="#patchwork">Patchwork</a>
+    <a href="#hermes">HERMES &amp; Ariel</a>
+    <a href="#aster">ASTER</a>
+    <a href="#why">Why it matters</a>
+  </nav>
 </section>
 <script>
   (function () {
@@ -45,9 +52,10 @@ body_class: research research-doc
   })();
 </script>
 
-<section class="page-card r-section">
+<section class="page-card r-section" id="question">
   <div class="r-split">
     <div>
+      <span class="r-num">01</span>
       <h2>The question</h2>
       <p>
         We still cannot say what a typical sub-Neptune actually <em>is</em>. The same mass and radius fit
@@ -92,7 +100,8 @@ body_class: research research-doc
   </div>
 </section>
 
-<section class="page-card r-section">
+<section class="page-card r-section" id="patchwork">
+  <span class="r-num">02</span>
   <h2>A Patchwork of Worlds: A Uniform JWST Survey of Sub-Neptune Atmospheres</h2>
   <p class="r-callout">
     I will conduct the first population-level survey of sub-Neptunes observed with JWST using a consistent
@@ -153,7 +162,8 @@ body_class: research research-doc
   </div>
 </section>
 
-<section class="page-card r-section">
+<section class="page-card r-section" id="hermes">
+  <span class="r-num">03</span>
   <h2>HERMES &amp; the Ariel mission</h2>
   <div class="r-split r-split-even">
     <div>
@@ -196,7 +206,8 @@ body_class: research research-doc
   </div>
 </section>
 
-<section class="page-card r-section">
+<section class="page-card r-section" id="aster">
+  <span class="r-num">04</span>
   <h2>ASTER: the agent that runs it</h2>
   <p>
     <strong>ASTER</strong> (Agentic Science Toolkit for Exoplanet Research) is an agentic AI framework for
@@ -216,7 +227,8 @@ body_class: research research-doc
   </figure>
 </section>
 
-<section class="page-card r-section">
+<section class="page-card r-section r-closing" id="why">
+  <span class="r-num">05</span>
   <h2>Why it matters</h2>
   <div class="r-split r-split-even">
     <p>
@@ -224,13 +236,4 @@ body_class: research research-doc
       interchangeable. A uniform, open sub-Neptune library replaces that assumption with data that can
       legitimately be compared. And composition is our most direct probe of how these planets formed:
       metallicity and the carbon-to-oxygen ratio record where in a disk a planet assembled, while mean
-      molecular weight separates a thin hydrogen layer over a rocky core from a deep, volatile-rich interior.
-    </p>
-    <p>
-      The same measurements decide how the next decade of telescope time is spent. Knowing how many planets
-      must be observed, and at what precision, before a trend is detectable is the question Ariel faces now.
-    </p>
-  </div>
-</section>
-
-<script src="{{ '/assets/research-planets.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+      molecular weig
