@@ -8,7 +8,7 @@
 
   // 16 x 18 sprite, every row exactly 16 wide. o outline, g skin,
   // l highlight, K lash line, i iris, j lower iris glow, e pupil,
-  // w eye sparkle, p cheek, m mouth, a antenna tip, d nappy.
+  // w eye sparkle, p cheek, m mouth, a antenna tip.
   // The last two rows (feet) alternate while walking.
   const ROWS_OPEN = [
     '..a..........a..',
@@ -25,8 +25,8 @@
     '...oggggggggo...',
     '....oggggggo....',
     '..oggggggggggo..',
-    '...oddddddddo...',
-    '....oddddddo....',
+    '...oggggggggo...',
+    '....oggggggo....',
   ];
   // Blink: happy closed-eye arcs.
   const ROWS_BLINK = ROWS_OPEN.slice();
@@ -41,7 +41,7 @@
   const COLORS = {
     o: '#14244a', g: '#7fb2f2', l: '#d2e6ff', K: '#150f33', i: '#7a3fd6',
     j: '#e7a6ff', e: '#150f33', w: '#ffffff', p: '#f4a3b8', m: '#3b1d2a',
-    a: '#f4cf9a', d: '#f2e9d8',
+    a: '#f4cf9a',
   };
   const W = 16, H = 18;
 
@@ -64,9 +64,8 @@
   };
 
   const LINES = [
-    'gleep!', 'take me to your PI', 'is that a sub-Neptune?', 'mama?',
-    'goo goo ga-lactic', 'I come in peace (and nappies)', 'boop',
-    'what is a cold trap', 'hehe', 'more JWST time pls', 'zorp?',
+    'gleep!', 'take me to your PI', 'is that a sub-Neptune?',
+    'goo goo ga-lactic', 'boop', 'hehe', 'more JWST time pls', 'zorp?',
   ];
 
   const css = `
