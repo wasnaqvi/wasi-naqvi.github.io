@@ -17,7 +17,9 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+/* The whole site reads at ~110%: text, spacing and widths are rem-based,
+   so the root size scales them together. */
+html { scroll-behavior: smooth; font-size: 110%; }
 
 body {
   margin: 0;
@@ -198,7 +200,7 @@ body.landing {
 }
 
 body.landing .content {
-  max-width: 1400px;
+  max-width: 1540px;
 }
 
 /* ---------- Typography ---------- */
@@ -261,7 +263,7 @@ a:hover { color: #ffe3b3; }
   width: 100%;
 }
 
-.landing-text { flex: 1 1 480px; max-width: 720px; }
+.landing-text { flex: 1 1 528px; max-width: 792px; }
 
 .kicker {
   text-transform: uppercase;
@@ -304,8 +306,8 @@ a:hover { color: #ffe3b3; }
 .landing-photo { flex: 0 0 auto; }
 
 .landing-photo img {
-  width: clamp(250px, 30vw, 390px);
-  height: clamp(250px, 30vw, 390px);
+  width: clamp(275px, 33vw, 430px);
+  height: clamp(275px, 33vw, 430px);
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(244, 207, 154, 0.5);
@@ -511,8 +513,8 @@ a:hover { color: #ffe3b3; }
 .reading-link { font-size: 1.3rem; font-weight: 600; }
 
 .reading-photo {
-  width: clamp(200px, 20vw, 260px);
-  height: clamp(200px, 20vw, 260px);
+  width: clamp(220px, 22vw, 286px);
+  height: clamp(220px, 22vw, 286px);
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -567,8 +569,8 @@ a:hover { color: #ffe3b3; }
 }
 
 .vault-headshot {
-  width: clamp(200px, 20vw, 260px);
-  height: clamp(200px, 20vw, 260px);
+  width: clamp(220px, 22vw, 286px);
+  height: clamp(220px, 22vw, 286px);
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -760,7 +762,7 @@ a:hover { color: #ffe3b3; }
 .footer-dot { margin: 0 0.55rem; color: var(--terra); }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .nav-toggle { display: flex; }
 
   .nav {
@@ -1000,7 +1002,7 @@ body.software .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 270px;
+  width: 297px;
   text-align: center;
   text-decoration: none;
   color: var(--cream);
@@ -1298,7 +1300,7 @@ body.research-doc h3 {
 
 /* ---------- Spacing pass (2026-11) ---------- */
 /* Reading pages get a readable width; landing, research and software keep their own. */
-.content { max-width: 1120px; }
+.content { max-width: 1232px; }
 
 /* Cards: no stray margin at the top or bottom edge of a card. */
 .page-card > :first-child { margin-top: 0; }
@@ -1329,7 +1331,7 @@ body.research-doc h3 {
 }
 
 /* ---------- Research page polish ---------- */
-body.research-doc .content { max-width: 1480px; }
+body.research-doc .content { max-width: 1628px; }
 body.research-doc .page-card { margin-bottom: 3rem; }
 .r-section { scroll-margin-top: 5.5rem; }
 
